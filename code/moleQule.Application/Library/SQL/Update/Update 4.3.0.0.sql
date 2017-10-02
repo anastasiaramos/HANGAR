@@ -1,0 +1,49 @@
+﻿/* UPDATE 4.3.0.0*/
+
+SET SEARCH_PATH = "COMMON";
+
+UPDATE "Variable" SET "VALUE" = '4.3.0.0' WHERE "NAME" = 'DB_VERSION';
+
+
+SET search_path TO "0001";
+
+DROP TABLE IF EXISTS "Cliente" CASCADE;
+CREATE TABLE "Cliente" ( 
+	"OID" bigserial NOT NULL,
+	"SERIAL" bigint DEFAULT 0 NOT NULL UNIQUE,
+	"ESTADO" bigint DEFAULT 10,
+	"NUMERO_CLIENTE" int8 NOT NULL UNIQUE,
+	"TIPO_ID" bigint, 
+	"CODIGO" varchar(255),	
+	"NOMBRE" varchar(255),
+	"NOMBRE_COMERCIAL" varchar(255),
+	"TITULAR" varchar(255),
+	"DIRECCION" varchar(255),
+	"POBLACION" varchar(255),
+	"CODIGO_POSTAL" varchar(255),
+	"PROVINCIA" varchar(255),
+	"TELEFONOS" varchar(255),
+	"FAX" varchar(255),
+	"MOVIL" varchar(255),
+	"MUNICIPIO" varchar(255),
+	"EMAIL" varchar(255),
+	"OBSERVACIONES" text,
+	"HISTORIA" text,
+	"LIMITE_CREDITO" decimal(10,2),
+	"CONTACTO" varchar(255),
+	"MEDIO_PAGO" bigint DEFAULT 1,
+	"FORMA_PAGO" bigint,
+	"DIAS_PAGO" bigint,
+	"CODIGO_EXPLOTACION" varchar(255),
+	"CUENTA_BANCARIA" varchar(255),
+	"OID_CUENTA_BANCARIA_ASOCIADA" int8 DEFAULT 0,
+	"DESCUENTO" decimal(10,2) default 0,
+	"PRECIO_TRANSPORTE" decimal(10,2),
+	"OID_TRANSPORTE" bigint DEFAULT 0 NOT NULL,
+	"CUENTA_CONTABLE" text,
+	"OID_IMPUESTO" bigint,
+	CONSTRAINT "Cliente_PK" PRIMARY KEY ("OID")
+) WITHOUT OIDS;
+
+ALTER TABLE "Cliente" OWNER TO moladmin;
+GRANT ALL ON TABLE "Cliente" TO GROUP "MOLEQULE_ADMINISTRATOR";

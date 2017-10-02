@@ -1,0 +1,12 @@
+C:\VS Projects Git\Hangar\code\moleQule.Application\Library\bin\moleQule.Library.Application.dll.config
+C:\VS Projects Git\Hangar\code\moleQule.Application\Library\bin\moleQule.Library.Application.dll
+C:\VS Projects Git\Hangar\code\moleQule.Application\Library\bin\moleQule.Library.Application.pdb
+C:\VS Projects Git\Hangar\code\moleQule.Application\Library\obj\Preproduccion\moleQule.Library.Application.Resources.Enums.resources
+C:\VS Projects Git\Hangar\code\moleQule.Application\Library\obj\Preproduccion\moleQule.Library.Application.Resources.Paths.resources
+C:\VS Projects Git\Hangar\code\moleQule.Application\Library\obj\Preproduccion\moleQule.Library.Application.Resources.Defaults.resources
+C:\VS Projects Git\Hangar\code\moleQule.Application\Library\obj\Preproduccion\moleQule.Library.Application.Resources.Messages.resources
+C:\VS Projects Git\Hangar\code\moleQule.Application\Library\obj\Preproduccion\moleQule.Library.Application.Resources.ElementosSeguros.resources
+C:\VS Projects Git\Hangar\code\moleQule.Application\Library\obj\Preproduccion\moleQule.Library.Application.csproj.GenerateResource.Cache
+C:\VS Projects Git\Hangar\code\moleQule.Application\Library\obj\Preproduccion\moleQule.Library.Application.dll
+C:\VS Projects Git\Hangar\code\moleQule.Application\Library\obj\Preproduccion\moleQule.Library.Application.pdb
+C:\VS Projects Git\Hangar\code\moleQule.Application\Library\obj\Preproduccion\moleQule.Library.Application.csprojResolveAssemblyReference.cache

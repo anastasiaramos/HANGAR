@@ -1,0 +1,13 @@
+C:\VS Projects\Hangar\moleQule.Application\Library\bin\moleQule.Library.Application.dll.config
+C:\VS Projects\Hangar\moleQule.Application\Library\bin\moleQule.Library.Application.dll
+C:\VS Projects\Hangar\moleQule.Application\Library\bin\moleQule.Library.Application.pdb
+C:\VS Projects\Hangar\moleQule.Application\Library\obj\Preproduccion\ResolveAssemblyReference.cache
+C:\VS Projects\Hangar\moleQule.Application\Library\obj\Preproduccion\moleQule.Library.Application.Resources.Enums.resources
+C:\VS Projects\Hangar\moleQule.Application\Library\obj\Preproduccion\moleQule.Library.Application.Resources.Paths.resources
+C:\VS Projects\Hangar\moleQule.Application\Library\obj\Preproduccion\moleQule.Library.Application.Resources.Defaults.resources
+C:\VS Projects\Hangar\moleQule.Application\Library\obj\Preproduccion\moleQule.Library.Application.Resources.Messages.resources
+C:\VS Projects\Hangar\moleQule.Application\Library\obj\Preproduccion\moleQule.Library.Application.Resources.ElementosSeguros.resources
+C:\VS Projects\Hangar\moleQule.Application\Library\obj\Preproduccion\GenerateResource.read.1.tlog
+C:\VS Projects\Hangar\moleQule.Application\Library\obj\Preproduccion\GenerateResource.write.1.tlog
+C:\VS Projects\Hangar\moleQule.Application\Library\obj\Preproduccion\moleQule.Library.Application.dll
+C:\VS Projects\Hangar\moleQule.Application\Library\obj\Preproduccion\moleQule.Library.Application.pdb

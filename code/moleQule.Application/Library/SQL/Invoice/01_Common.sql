@@ -1,0 +1,19 @@
+-- INVOICE MODULE COMMON SCHEMA SCRIPT
+-- Requires STORE MODULE
+
+CREATE TABLE "TipoCliente" ( 
+	"OID" bigserial  NOT NULL,
+	"VALOR" character varying(255) NOT NULL,
+	CONSTRAINT "TipoCliente_PK" PRIMARY KEY ("OID")
+) WITHOUT OIDS;
+
+ALTER TABLE "TipoCliente" OWNER TO moladmin;
+GRANT ALL ON TABLE "TipoCliente" TO GROUP "MOLEQULE_ADMINISTRATOR";
+
+-- FOREIGN KEYS
+
+ALTER TABLE ONLY "TipoCliente"
+    ADD CONSTRAINT uq_tipocliente_oid UNIQUE ("OID");
+
+ALTER TABLE ONLY "TipoCliente"
+    ADD CONSTRAINT uq_tipocliente_valor UNIQUE ("VALOR");

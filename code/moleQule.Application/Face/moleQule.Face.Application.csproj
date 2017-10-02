@@ -1,0 +1,715 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CE1D5AAA-9D0E-4AD8-B3F5-1080C420975F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>moleQule.Face.Application</RootNamespace>
+    <AssemblyName>Hangar</AssemblyName>
+    <ApplicationIcon>Hangar.ico</ApplicationIcon>
+    <ManifestCertificateThumbprint>FD6BB49E2FD8A9A411E1625B21BEF14AB95F70AE</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Hangar.Face_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>false</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>ftp://ftp.iqingenieros.com/hangar/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://iqingenieros.com/apps/deploy/hangar/</InstallUrl>
+    <ProductName>Hangar</ProductName>
+    <PublisherName>iQ Ingenieros</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>index.htm</WebPage>
+    <ApplicationVersion>0.7.6.%2a</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetZone>LocalIntranet</TargetZone>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>RELEASE;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Preproduccion|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>PREPRO</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Staging|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>STAGING;</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\..\..\..\External Libs\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.DynamicProxy">
+      <HintPath>..\..\..\Common\Castle.DynamicProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Csla, Version=2.0.3.0, Culture=neutral, PublicKeyToken=93be5fdc093e4c30, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\External Libs\Csla.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\moleQule\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Infralution.Localization">
+      <HintPath>..\..\..\..\External Libs\Infralution.Localization\bin\Infralution.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.VBIDE, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Common\Interop.VBIDE.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\External Libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="moleQule.Face, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\moleQule\moleQule.Face\bin\moleQule.Face.dll</HintPath>
+    </Reference>
+    <Reference Include="moleQule.Face.Common, Version=2.5.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\moleQule\moleQule.Common\code\Face\bin\moleQule.Face.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="moleQule.Face.Hipatia, Version=0.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Hipatia\Code\Face\bin\moleQule.Face.Hipatia.dll</HintPath>
+    </Reference>
+    <Reference Include="moleQule.Face.Instruction, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\moleQule.Instruction\code\Face\bin\moleQule.Face.Instruction.dll</HintPath>
+    </Reference>
+    <Reference Include="moleQule.Face.Invoice, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release_7.2.0.2\moleQule.Face.Invoice.dll</HintPath>
+    </Reference>
+    <Reference Include="moleQule.Face.Quality, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release_7.2.0.2\moleQule.Face.Quality.dll</HintPath>
+    </Reference>
+    <Reference Include="moleQule.Face.Store, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release_7.2.0.2\moleQule.Face.Store.dll</HintPath>
+    </Reference>
+    <Reference Include="moleQule.Library, Version=6.3.4.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\moleQule\moleQule.Library\bin\moleQule.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="moleQule.Library.Application, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\bin\moleQule.Library.Application.dll</HintPath>
+    </Reference>
+    <Reference Include="moleQule.Library.Common, Version=4.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\moleQule\moleQule.Common\code\Library\bin\moleQule.Library.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="moleQule.Library.Hipatia, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Hipatia\Code\Library\bin\moleQule.Library.Hipatia.dll</HintPath>
+    </Reference>
+    <Reference Include="moleQule.Library.Instruction, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\moleQule.Instruction\code\Library\bin\moleQule.Library.Instruction.dll</HintPath>
+    </Reference>
+    <Reference Include="moleQule.Library.Invoice, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release_7.2.0.2\moleQule.Library.Invoice.dll</HintPath>
+    </Reference>
+    <Reference Include="moleQule.Library.Quality, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release_7.2.0.2\moleQule.Library.Quality.dll</HintPath>
+    </Reference>
+    <Reference Include="moleQule.Library.Store, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release_7.2.0.2\moleQule.Library.Store.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\moleQule\packages\NHibernate.3.3.3.4001\lib\Net35\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=2.0.14.3, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\moleQule\packages\Npgsql.2.0.12.1\lib\net40\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Notificacion\NotificationMngForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Notificacion\NotificationMngForm.designer.cs">
+      <DependentUpon>NotificationMngForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\BackupSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\BackupSelectForm.Designer.cs">
+      <DependentUpon>BackupSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hipatia\AgenteMngForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hipatia\AgenteMngForm.designer.cs">
+      <DependentUpon>AgenteMngForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hipatia\AgenteSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hipatia\AgenteSelectForm.designer.cs">
+      <DependentUpon>AgenteSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMng.cs" />
+    <Compile Include="System\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Notificacion\NotificationMngForm.resx">
+      <DependentUpon>NotificationMngForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Defaults.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Defaults.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Labels.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Labels.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Messages.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Paths.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Paths.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\Hangar.Library.Alumno.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Curso.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.CursoFormacion.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Empresa.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.HComboBoxSourceList.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Modulo.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Municipios.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.PlanEstudios.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.PlanExtra.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Promocion.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Submodulo.datasource" />
+    <None Include="Properties\DataSources\moleQule.Library.HComboBoxSourceList.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Resources\Conf.Designer.cs" />
+    <Compile Include="Resources\Defaults.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Defaults.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Labels.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labels.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Messages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Paths.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Paths.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\NewsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\NewsForm.Designer.cs">
+      <DependentUpon>NewsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Empresas.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\PlanEstudios.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\PlanExtra.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Modulos.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Cursos.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Instructor.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Promociones.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Alumnos.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Hangar.Library.Alumno_Parte.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Horario.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Sesion.datasource" />
+    <EmbeddedResource Include="Resources\Partes.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Hangar.ico" />
+    <None Include="Resources\transportista_baja1.ico" />
+    <None Include="Resources\transportista_activo1.ico" />
+    <None Include="Resources\transportista1.ico" />
+    <None Include="Resources\traspaso_banco.ico" />
+    <None Include="Resources\transportista_baja.ico" />
+    <None Include="Resources\transportista_activo.ico" />
+    <None Include="Resources\transportista.ico" />
+    <None Include="Resources\tpv.ico" />
+    <None Include="Resources\tipo_gasto.ico" />
+    <None Include="Resources\tarjeta_credito.ico" />
+    <None Include="Resources\ticket.ico" />
+    <None Include="Resources\balance.ico" />
+    <None Include="Resources\albaran_emitido.ico" />
+    <None Include="Resources\albaran_emitido_facturado.ico" />
+    <None Include="Resources\albaran_emitido_abierto.ico" />
+    <None Include="Resources\backup.ico" />
+    <None Include="Resources\albaran_recibido.ico" />
+    <None Include="Resources\albaran_recibido_facturado.ico" />
+    <None Include="Resources\albaran_recibido_abierto.ico" />
+    <None Include="Resources\caja_tickets.ico" />
+    <None Include="Resources\apunte_banco.ico" />
+    <None Include="Resources\acreedor.ico" />
+    <None Include="Resources\acreedor_activo.ico" />
+    <None Include="Resources\acreedor_baja.ico" />
+    <Content Include="Resources\calendar.ico" />
+    <None Include="Resources\empresa.ico" />
+    <None Include="Resources\cuenta_bancaria.ico" />
+    <None Include="Resources\impuesto.ico" />
+    <None Include="Resources\puertos.ico" />
+    <None Include="Resources\cargo.ico" />
+    <None Include="Resources\localidad.ico" />
+    <None Include="Resources\cobro.ico" />
+    <None Include="Resources\precios.ico" />
+    <None Include="Resources\inventario_valorado.ico" />
+    <None Include="Resources\pago.ico" />
+    <None Include="Resources\documento.ico" />
+    <None Include="Resources\modelo.ico" />
+    <None Include="Resources\index.ico" />
+    <None Include="Resources\document.ico" />
+    <None Include="Resources\cliente.ico" />
+    <None Include="Resources\proveedor.ico" />
+    <None Include="Resources\producto.ico" />
+    <None Include="Resources\factura_emitida.ico" />
+    <None Include="Resources\factura_emitida_cobrada.ico" />
+    <None Include="Resources\factura_emitida_pendiente.ico" />
+    <None Include="Resources\factura_recibida_pagada.ico" />
+    <None Include="Resources\factura_recibida_pendiente.ico" />
+    <None Include="Resources\pedido_cliente.ico" />
+    <None Include="Resources\notificaciones.ico" />
+    <None Include="Resources\kit.ico" />
+    <None Include="Resources\familia.ico" />
+    <None Include="Resources\informe.ico" />
+    <None Include="Resources\expediente.ico" />
+    <None Include="Resources\microexpediente.ico" />
+    <None Include="Resources\obra.ico" />
+    <None Include="Resources\pedido_proveedor.ico" />
+    <None Include="Resources\factura_recibida.ico" />
+    <None Include="Resources\package.ico" />
+    <None Include="Resources\pago_acreedor.ico" />
+    <None Include="Resources\pago_factura_recibida.ico" />
+    <None Include="Resources\pago_gasto.ico" />
+    <None Include="Resources\pago_nomina.ico" />
+    <None Include="Resources\pago_todos.ico" />
+    <None Include="Resources\presupuesto1.ico" />
+    <None Include="Resources\cobro_cliente.ico" />
+    <None Include="Resources\cobro_factura_emitida.ico" />
+    <None Include="Resources\cobro_todos.ico" />
+    <None Include="Resources\cierre_caja.ico" />
+    <None Include="Resources\linea_caja.ico" />
+    <None Include="Resources\extracto_tarjeta.ico" />
+    <None Include="Resources\prestamo.ico" />
+    <None Include="Resources\cliente_activo.ico" />
+    <None Include="Resources\cliente_baja.ico" />
+    <None Include="Resources\despachante.ico" />
+    <None Include="Resources\despachante_activo.ico" />
+    <None Include="Resources\despachante_baja.ico" />
+    <None Include="Resources\empleado.ico" />
+    <None Include="Resources\empleado_activo.ico" />
+    <None Include="Resources\empleado_baja.ico" />
+    <None Include="Resources\proveedor1.ico" />
+    <None Include="Resources\proveedor_activo.ico" />
+    <None Include="Resources\proveedor_baja.ico" />
+    <None Include="Resources\naviera_activo.ico" />
+    <None Include="Resources\naviera_baja.ico" />
+    <None Include="Resources\empleado1.ico" />
+    <None Include="Resources\empleado_activo1.ico" />
+    <None Include="Resources\empleado_baja1.ico" />
+    <None Include="Resources\gasto_nomina.ico" />
+    <None Include="Resources\gasto_general.ico" />
+    <None Include="Resources\gasto_impuesto.ico" />
+    <None Include="Resources\gastos.ico" />
+    <Content Include="Resources\refresh.ico" />
+    <None Include="Resources\salir.ico" />
+    <None Include="Resources\serie.ico" />
+    <None Include="Resources\stock.ico" />
+    <None Include="Resources\store.ico" />
+    <None Include="Resources\shield1.ico" />
+    <None Include="Resources\settings.ico" />
+    <None Include="Resources\remesa_nomina.ico" />
+    <None Include="Resources\registro.ico" />
+    <Content Include="Resources\submit.ico" />
+    <None Include="Resources\browse_16.png" />
+    <None Include="Resources\discrepancia.ico" />
+    <None Include="Resources\area_48.png" />
+    <None Include="Resources\claseauditoria_48.png" />
+    <None Include="Resources\incidencia.png" />
+    <None Include="Resources\acta_48.png" />
+    <None Include="Resources\departamento_48.png" />
+    <None Include="Resources\auditoria_48.png" />
+    <None Include="Resources\plananual_48.png" />
+    <None Include="Resources\material_48.png" />
+    <None Include="Resources\curso_48.png" />
+    <None Include="Resources\report_48.png" />
+    <None Include="Resources\pedido_48.png" />
+    <None Include="Resources\clipboard.ico" />
+    <None Include="Resources\compass.png" />
+    <None Include="Resources\cabinet.png" />
+    <None Include="Resources\tablas.png" />
+    <None Include="Resources\wheel.png" />
+    <None Include="Resources\Caja.ico" />
+    <None Include="Resources\document_into.ico" />
+    <None Include="Resources\document_out.ico" />
+    <None Include="Resources\document_pinned.ico" />
+    <None Include="Resources\presupuesto.ico" />
+    <None Include="Resources\arrow_left_green.png" />
+    <None Include="Resources\select_16.png" />
+    <None Include="Hangar.Face_TemporaryKey.pfx" />
+    <BaseApplicationManifest Include="Properties\app.manifest" />
+    <None Include="Resources\form_yellow1.png" />
+    <None Include="Resources\form_yellow.png" />
+    <None Include="Resources\form_yellow.ico" />
+    <None Include="Properties\DataSources\Hangar.Library.Preguntas.datasource" />
+    <None Include="Resources\filter_on_16.png" />
+    <None Include="Properties\DataSources\Hangar.Library.ExamenList.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.ModuloList.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.PreguntaList.datasource" />
+    <None Include="Resources\Hangar.png" />
+    <None Include="Resources\molequle.png" />
+    <None Include="Properties\DataSources\Hangar.Library.Almacen.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.AlmacenInfo.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.AlmacenList.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.AlumnoClientes.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.AlumnoCurso.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Alumno_Convocatoria.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Alumno_ConvocatoriaInfo.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Caja.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Cliente.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.ClienteInfo.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.ClienteList.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.ConceptoFacturaC.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.ConceptoFacturasI.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.ConceptoFacturasP.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Departamento.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Departamento1.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.DepartamentoInfo.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.FacturaCliente.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.FacturaInstructor.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.FacturaProveedor.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.FacturaProveedorInfo.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.HComboBoxSourceList1.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Incidencia.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.InventarioAlmacenInfo.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.LineaAlmacenes.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.LineaCajas.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.LineaInventarios.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.MunicipioList.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.PedidoProveedorList.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.PlantillaExamen.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.PreguntaInfo.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Proveedor.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.ProveedorInfo.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.ProveedorServicio.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.RespuestaExamen.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.ServicioCliente.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.ServicioProveedor.datasource" />
+    <None Include="Resources\Logotipos.jpg" />
+    <None Include="Properties\DataSources\Hangar.Library.PreguntaExamen.datasource" />
+    <None Include="Resources\delete_32.png" />
+    <None Include="Resources\edit_32.png" />
+    <None Include="Resources\view_32.png" />
+    <None Include="Resources\order_32.png" />
+    <None Include="Resources\Edit.png" />
+    <None Include="Properties\DataSources\Hangar.Library.ActaComite.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.ActaComiteInfo.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Ampliacion.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Area.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.AreaInfo.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Auditoria.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.AuditoriaList.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.ClaseAuditoria.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.ClaseAuditoriaInfo.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.ComunicadoAuditoria.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.CuestionAuditoria.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Discrepancia.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.InformeAmpliacion.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.InformeAmpliacion1.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.InformeCorrector.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.InformeDiscrepancia.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.PlanAnual.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.PlanAnualInfo.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.PuntoActa.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Tema.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.TipoAuditoria.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.TipoAuditoriaInfo.datasource" />
+    <None Include="Resources\Notas.ico" />
+    <None Include="Class Diagrams\Interface.cd" />
+    <None Include="Properties\DataSources\Hangar.Library.Alumno_Practica.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Cargo.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Clase.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.ClaseExtra.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.ClaseExtraInfo.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.ClasePractica.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.ClasePracticaInfo.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.ClaseTeorica.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.ClaseTeoricaInfo.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Convocatoria_Curso.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Cronograma.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Disponibilidad.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.HistoriaInfo.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Instructor.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Instructor_Promocion.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.RegistroResumen.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Respuesta.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Respuesta_Alumno_Examen.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.SesionAuxiliar.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.SesionCronograma.datasource" />
+    <EmbeddedResource Include="Tools\BackupSelectForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BackupSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\LoginForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Conf.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Disponibilidad.ico" />
+    <EmbeddedResource Include="Resources\Izquierda.ico" />
+    <EmbeddedResource Include="Resources\Derecha.ico" />
+    <EmbeddedResource Include="Resources\Horarios.ico" />
+    <EmbeddedResource Include="Resources\Preguntas.ico" />
+    <EmbeddedResource Include="Resources\login.ico" />
+    <EmbeddedResource Include="Resources\Cerrar.ico" />
+    <EmbeddedResource Include="Resources\Print.ico" />
+    <EmbeddedResource Include="Resources\Imprimir.ico" />
+    <EmbeddedResource Include="Resources\Proponer.ico" />
+    <EmbeddedResource Include="Resources\Quitar.ico" />
+    <EmbeddedResource Include="Resources\Resumen.ico" />
+    <EmbeddedResource Include="Resources\Emitir.ico" />
+    <EmbeddedResource Include="Resources\Liberar.ico" />
+    <EmbeddedResource Include="Resources\Actualizar.ico" />
+    <EmbeddedResource Include="Resources\Aceptar.ico" />
+    <EmbeddedResource Include="Resources\Bloqueada.ico" />
+    <EmbeddedResource Include="Resources\Disponible.ico" />
+    <EmbeddedResource Include="Resources\cubes_blue.ico" />
+    <EmbeddedResource Include="Resources\Examen.ico" />
+    <EmbeddedResource Include="Resources\Bloqueada1.ico" />
+    <EmbeddedResource Include="Resources\borrar_16.png" />
+    <EmbeddedResource Include="Resources\Delete2.ico" />
+    <EmbeddedResource Include="Resources\borrar_161.png" />
+    <EmbeddedResource Include="Resources\Disponible1.ico" />
+    <EmbeddedResource Include="Resources\folder.ico" />
+    <EmbeddedResource Include="Resources\Nivel.ico" />
+    <EmbeddedResource Include="Resources\ordenar_16.png" />
+    <EmbeddedResource Include="Resources\Replace.ico" />
+    <EmbeddedResource Include="Resources\ordenar_161.png" />
+    <EmbeddedResource Include="Resources\Reservada.ico" />
+    <EmbeddedResource Include="Resources\Reservada1.ico" />
+    <EmbeddedResource Include="Resources\Revisiones.ico" />
+    <EmbeddedResource Include="Resources\Submodulos1.ico" />
+    <EmbeddedResource Include="Resources\Submodulos.ico">
+      <CustomToolNamespace>Hangar.Face.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\submodulos_verde.ico" />
+    <EmbeddedResource Include="Resources\target.ico" />
+    <EmbeddedResource Include="Resources\ver_16.png" />
+    <EmbeddedResource Include="Resources\ver_161.png" />
+    <EmbeddedResource Include="Resources\View.ico" />
+    <None Include="Properties\DataSources\Hangar.Library.MaterialDocente.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Material_Alumno.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.Material_Plan.datasource" />
+    <None Include="Properties\DataSources\Hangar.Library.RevisionMaterial.datasource" />
+    <EmbeddedResource Include="Resources\MaterialDocente.ico" />
+    <EmbeddedResource Include="Tools\NewsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\SettingsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="BusinessObjects.CrystalReports.NET.2.0">
+      <Visible>False</Visible>
+      <ProductName>Crystal Reports para .NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Data.Access.Components.2.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Data Access Components 2.8</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Application\" />
+    <Folder Include="Class Diagrams\Auxiliares\" />
+    <Folder Include="Modules\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>mkdir ".\Backups"
+mkdir ".\SQL"
+mkdir ".\log"
+copy "$(ProjectDir)..\..\moleQule.BaQup\bin\BaQup.exe" ".\BaQup.exe" /Y 
+xcopy "$(ProjectDir)..\Library\Asm\$(ConfigurationName)\*" ".\Asm"  /Y /R /I
+ xcopy "$(ProjectDir)..\..\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Autopilot.exe" ".\" /Y /R /I
+xcopy "$(ProjectDir)..\..\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Autopilot.exe.config" ".\" /Y /R /I
+xcopy ".\*" "..\..\..\..\deploy\$(ConfigurationName)"  /Y /R /I /E</PostBuildEvent>
+    <PreBuildEvent>rmdir ".\Backups" /S /Q
+rmdir ".\SQL" /S /Q</PreBuildEvent>
+  </PropertyGroup>
+</Project>

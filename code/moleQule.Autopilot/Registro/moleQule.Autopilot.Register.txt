@@ -1,0 +1,8 @@
+
+1. Dar permisos de escritura a SERVICIO LOCAL de la carpeta Facto
+2. Crear y dar permisos de escritura a SERVICIO LOCAL de la carpeta "C:\Windows\ServiceProfiles\LocalService\AppData\Roaming\postgresql"
+3. Crear carpeta log dentro de la carpeta de instalación de la aplicación y darle permisos al usuario SERVICIO LOCAL
+4. Ejecutar installutil "C:\Program Files\iQ Ingenieros\Facto\moleQule.Autopilot.exe" /logtoconsole= true
+5. Iniciar servicio
+6. Revisar versión del Postgres dentro de la tabla de variables
+7. Quitar la tarea programada que ejecuta los backups

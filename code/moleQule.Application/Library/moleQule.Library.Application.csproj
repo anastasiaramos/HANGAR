@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{21555E27-D97A-42D6-82C8-D61080DD40C1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>moleQule.Library.Application</RootNamespace>
+    <AssemblyName>moleQule.Library.Application</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>RELEASE;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>
+    </DocumentationFile>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Preproduccion|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <DefineConstants>PREPRO;</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Staging|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>STAGING;</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Csla">
+      <HintPath>..\..\..\..\External Libs\Csla.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\Common\Office.Interop\2007\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\Common\Office.Interop\2007\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="moleQule.Library, Version=6.3.4.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\moleQule\moleQule.Library\bin\moleQule.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="moleQule.Library.Common, Version=4.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\moleQule\moleQule.Common\code\Library\bin\moleQule.Library.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="moleQule.Library.Hipatia, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Hipatia\Code\Library\bin\moleQule.Library.Hipatia.dll</HintPath>
+    </Reference>
+    <Reference Include="moleQule.Library.Instruction">
+      <HintPath>..\..\..\..\moleQule.Instruction\code\Library\bin\moleQule.Library.Instruction.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="moleQule.Library.Invoice">
+      <HintPath>..\..\Release_7.2.0.2\moleQule.Library.Invoice.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="moleQule.Library.Quality">
+      <HintPath>..\..\Release_7.2.0.2\moleQule.Library.Quality.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="moleQule.Library.Store, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release_7.2.0.2\moleQule.Library.Store.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\..\..\moleQule\packages\NHibernate.3.3.3.4001\lib\Net35\NHibernate.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\..\..\..\moleQule\packages\Npgsql.2.0.12.1\lib\net40\Npgsql.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Modules\Hipatia\AgenteSelector.cs" />
+    <Compile Include="Resources\Defaults.Designer.cs">
+      <DependentUpon>Defaults.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\ElementosSeguros.Designer.cs">
+      <DependentUpon>ElementosSeguros.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AppController.cs" />
+    <Compile Include="Principal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Enums.Designer.cs">
+      <DependentUpon>Enums.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Messages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Paths.Designer.cs">
+      <DependentUpon>Paths.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="Structs\EstadoFactura.cs" />
+    <Compile Include="Structs\EstadoSesion.cs" />
+    <Compile Include="Structs\Structs.cs" />
+    <Compile Include="Tools\CustomAdapter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tools\ExcelExporter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\HComboBoxSourceList.cs" />
+    <Compile Include="Tools\PivotTable.cs" />
+    <Compile Include="Tools\Scripts.cs" />
+    <Compile Include="Tools\WordExporter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Enums.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Enums.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Paths.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Paths.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Defaults.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Defaults.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Messages.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SQL\02_Create_Common_Tables.sql" />
+    <None Include="SQL\04_Create_Detail_Tables.sql" />
+    <None Include="SQL\20_Set_Privileges.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Asm\Staging\hibernate.cfg.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Asm\Release\hibernate.cfg.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="SQL\Update\Update 5.0.0.0.sql" />
+    <Content Include="SQL\Update\Update 4.3.0.0.sql" />
+    <Content Include="SQL\Update\Update 4.2.0.0.sql" />
+    <None Include="SQL\00_Users.sql" />
+    <Content Include="SQL\00_DB.sql" />
+    <Content Include="SQL\00_Drop_All.sql" />
+    <Content Include="SQL\01_Common.sql" />
+    <Content Include="SQL\02_Schema.sql" />
+    <Content Include="SQL\03_Common_Data.sql" />
+    <Content Include="SQL\04_Schema_Data.sql" />
+    <Content Include="SQL\Update\Update 4.1.0.0 .sql" />
+    <Content Include="SQL\Update\Update 4.0.0.0 .sql" />
+    <Content Include="SQL\Update\Update 3.11.0.0 .sql" />
+    <Content Include="SQL\Update\Update 3.10.0.0 .sql" />
+    <Content Include="SQL\Update\Update 3.7.0.0 .sql" />
+    <Content Include="SQL\Update\Update 3.1.0.0 .sql" />
+    <Content Include="SQL\Update\Update 3.0.0.0 .sql" />
+    <Content Include="SQL\Update\Update 1.0.0.0 .sql" />
+    <Content Include="SQL\Update\Update 2.0.0.0 .sql" />
+    <EmbeddedResource Include="Asm\Debug\hibernate.cfg.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ElementosSeguros.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ElementosSeguros.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Asm\Common\" />
+    <Folder Include="BO\" />
+    <Folder Include="Properties\DataSources\" />
+    <Folder Include="System\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>if ($(ConfigurationName)) == (Release) xcopy "$(ProjectDir)..\..\..\..\moleQule\moleQule.Library\SQL\Install\*" "$(ProjectDir)SQL\moleQule"  /Y /R /I
+if ($(ConfigurationName)) == (Release) xcopy "$(ProjectDir)..\..\..\..\moleQule\moleQule.Common\Library\SQL\Install\*" "$(ProjectDir)SQL\Common"  /Y /R /I
+if ($(ConfigurationName)) == (Release) xcopy "$(ProjectDir)..\..\moleQule.Invoice\Library\SQL\Install\*" "$(ProjectDir)\SQL\Invoice"  /Y /R /I
+if ($(ConfigurationName)) == (Release) xcopy "$(ProjectDir)..\..\moleQule.Store\Library\SQL\Install\*" "$(ProjectDir)SQL\Store"  /Y /R /I
+if ($(ConfigurationName)) == (Release) xcopy "$(ProjectDir)..\..\moleQule.Invoice\Library\SQL\Install\*" "$(ProjectDir)\SQL\Instruction/Y /R /I
+if ($(ConfigurationName)) == (Release) xcopy "$(ProjectDir)..\..\moleQule.Store\Library\SQL\Install\*" "$(ProjectDir)SQL\Quality"  /Y /R /I
+if ($(ConfigurationName)) == (Release) xcopy "$(ProjectDir)..\..\..\..\Hipatia\code\Library\SQL\Install\*" "$(ProjectDir)SQL\Hipatia"  /Y /R /I</PostBuildEvent>
+  </PropertyGroup>
+</Project>

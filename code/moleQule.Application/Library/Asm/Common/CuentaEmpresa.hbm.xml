@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0"  assembly="moleQule.Library.Application">
+	<class name="moleQule.Library.Application.CuentaEmpresa" schema="`COMMON`"  table="`CuentaEmpresa`" lazy="true">
+
+		<id name="Oid" column="`OID`" type="Int64" >
+			<generator class="sequence">				<param name="sequence">"COMMON"."Cuenta_Empresa_OID_seq"</param>			</generator>
+		</id>
+		<property column="`OID_EMPRESA`"  type="Int64" name="OidEmpresa"  />
+		<property column="`ENTIDAD`"  type="Int64" name="Entidad"  />
+		<property column="`SUCURSAL`"  type="Int64" name="Sucursal"  />
+		<property column="`DC`"  type="Int64" name="Dc"  />
+		<property column="`NUMERO`"  type="Int64" name="Numero"  />
+	</class>
+</hibernate-mapping>

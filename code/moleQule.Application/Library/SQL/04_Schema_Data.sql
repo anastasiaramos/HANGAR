@@ -1,0 +1,4 @@
+-- APPLICATION SCHEMA DATA SCRIPT
+	
+	
+INSERT INTO "Setting" ("NAME" , "VALUE") VALUES ('EmpresaDefault', '0');

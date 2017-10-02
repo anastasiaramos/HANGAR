@@ -1,0 +1,12 @@
+C:\VS Projects\Hangar\moleQule.Application\Library\bin\moleQule.Library.Application.dll.config
+C:\VS Projects\Hangar\moleQule.Application\Library\bin\moleQule.Library.Application.dll
+C:\VS Projects\Hangar\moleQule.Application\Library\bin\moleQule.Library.Application.pdb
+C:\VS Projects\Hangar\moleQule.Application\Library\obj\Release\moleQule.Library.Application.Resources.Enums.resources
+C:\VS Projects\Hangar\moleQule.Application\Library\obj\Release\moleQule.Library.Application.Resources.Paths.resources
+C:\VS Projects\Hangar\moleQule.Application\Library\obj\Release\moleQule.Library.Application.Resources.Defaults.resources
+C:\VS Projects\Hangar\moleQule.Application\Library\obj\Release\moleQule.Library.Application.Resources.Messages.resources
+C:\VS Projects\Hangar\moleQule.Application\Library\obj\Release\moleQule.Library.Application.Resources.ElementosSeguros.resources
+C:\VS Projects\Hangar\moleQule.Application\Library\obj\Release\moleQule.Library.Application.dll
+C:\VS Projects\Hangar\moleQule.Application\Library\obj\Release\moleQule.Library.Application.pdb
+C:\VS Projects\Hangar\moleQule.Application\Library\obj\Release\Hangar.Library.csproj.GenerateResource.Cache
+C:\VS Projects\Hangar\moleQule.Application\Library\obj\Release\Hangar.Library.csprojResolveAssemblyReference.cache

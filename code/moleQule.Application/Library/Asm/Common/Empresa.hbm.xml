@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0"  assembly="moleQule.Library.Application">
+	<class name="moleQule.Library.Application.Empresa" schema="`COMMON`"  table="`Empresa`" lazy="true">
+
+		<id name="Oid" column="`OID`" type="Int64" >
+			<generator class="sequence">				<param name="sequence">"COMMON"."Empresa_OID_seq"</param>			</generator>
+		</id>
+		<property column="`SERIAL`" type="Int64" name="Serial" />
+		<property column="`CODIGO`" type="String" name="Code" length="255" />
+		<property column="`NOMBRE`" type="String" name="Name" not-null="true" length="255" />
+		<property column="`ID`" type="String" name="ID" not-null="true" length="255" />
+		<property column="`TIPO_ID`" type="Int64" name="TipoID" />
+		<property column="`CTA_COTIZACION`" type="String" name="CtaCotizacion" not-null="true" length="255" />
+		<property column="`DIRECCION`" type="String" name="Direccion" not-null="true" length="255" />
+		<property column="`MUNICIPIO`" type="String" name="Municipio" not-null="true" length="255" />
+		<property column="`COD_POSTAL`" type="String" name="CodPostal" not-null="true" length="255" />
+		<property column="`PROVINCIA`" type="String" name="Provincia" not-null="true" length="255" />
+		<property column="`TELEFONOS`" type="String" name="Telefonos" not-null="true" length="255" />
+		<property column="`FAX`" type="String" name="Fax" not-null="true" length="255" />
+		<property column="`URL`" type="String" name="Url" not-null="true" length="255" />
+		<property column="`EMAIL`" type="String" name="Email" not-null="true" length="255" />
+		<property column="`RESPONSABLE`" type="String" name="Responsable" not-null="true" length="255" />
+		<property column="`LOGO`"  type="String" name="Logo" not-null="true" length="255" />
+    <property column="`CUENTA_BANCARIA`" type="String" name="CuentaBancaria" not-null="false" length="255" />
+	</class>
+</hibernate-mapping>

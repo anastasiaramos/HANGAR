@@ -1,0 +1,61 @@
+deploy/Debug/Asm/hibernate.cfg.xml
+deploy/Debug/Asm/hibernate_nh0001.cfg.xml
+deploy/Debug/Asm/hibernate_nh0002.cfg.xml
+deploy/Debug/Asm/hibernate_nh0003.cfg.xml
+deploy/Debug/Asm/hibernate_nh0004.cfg.xml
+deploy/Debug/Asm/hibernate_nh0005.cfg.xml
+deploy/Debug/Asm/hibernate_nh0006.cfg.xml
+deploy/Debug/Asm/hibernate_nh0007.cfg.xml
+deploy/Debug/Asm/hibernate_nh0008.cfg.xml
+deploy/Debug/Asm/hibernate_nh0009.cfg.xml
+deploy/Debug/Asm/hibernate_nh0010.cfg.xml
+deploy/Debug/Staging/Hangar.vshost.exe.config
+deploy/Debug/Hangar.exe.config
+deploy/Debug/Hangar.vshost.exe.config
+deploy/Debug/Hangar.vshost.exe.manifest
+deploy/Debug/Iesi.Collections.xml
+deploy/Debug/moleQule.Autopilot.exe.config
+deploy/Debug/moleQule.Library.Instruction.xml
+deploy/Debug/NHibernate.xml
+deploy/Debug/Ninject.Web.Common.xml
+deploy/Debug/Ninject.xml
+deploy/Debug/Npgsql.xml
+deploy/Debug/portada.pdf
+deploy/last update/Asm/hibernate.cfg.xml
+deploy/last update/Hangar.exe.config
+deploy/last update/Hangar.vshost.exe.config
+deploy/last update/Hangar.vshost.exe.manifest
+deploy/last update/Iesi.Collections.xml
+deploy/last update/moleQule.Autopilot.exe.config
+deploy/last update/moleQule.Library.Instruction.xml
+deploy/last update/NHibernate.xml
+deploy/last update/Npgsql.xml
+deploy/Release/Asm/hibernate.cfg.xml
+deploy/Release/db_backup_160707.backup
+deploy/Release/db_backup_160722.backup
+deploy/Release/db_backup_310802.backup
+deploy/Release/Hangar.exe.config
+deploy/Release/Hangar.vshost.exe.config
+deploy/Release/Hangar.vshost.exe.manifest
+deploy/Release/Iesi.Collections.xml
+deploy/Release/moleQule.Autopilot.exe.config
+deploy/Release/moleQule.Library.Instruction.xml
+deploy/Release/NHibernate.xml
+deploy/Release/Npgsql.xml
+deploy/Release/portada.pdf
+deploy/Staging/Asm/hibernate.cfg.xml
+deploy/Staging/Hangar.exe.config
+deploy/Staging/Hangar.vshost.exe.config
+deploy/Staging/Hangar.vshost.exe.manifest
+deploy/Staging/Iesi.Collections.xml
+deploy/Staging/moleQule.Autopilot.exe.config
+deploy/Staging/moleQule.Library.Instruction.xml
+deploy/Staging/NHibernate.xml
+deploy/Staging/Npgsql.xml
+doc/Calidad/Calidad.pdf
+doc/Calidad/Diagramas Calidad.pdf
+doc/Calidad/FORMATOS EDIC 01 REV 02 Julio 09.pdf
+doc/FORMATOS EDIC 01 REV 02 Julio 09.doc
+doc/PorFecha.vbs
+doc/SCRIPT HANGAR.sql
+doc/script.py

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" assembly="moleQule.Library.Application">
+  <class name="moleQule.Library.Application.ContactoEmpresa" schema="`COMMON`" table="`ContactoEmpresa`" lazy="true">
+
+    <id name="Oid" column="`OID`" type="Int64" unsaved-value="0">
+      <generator class="sequence">
+        <param name="sequence">"COMMON"."Contacto_Empresa_OID_seq"</param>
+      </generator>
+    </id>
+
+    <property column="`OID_EMPRESA`" type="Int64" name="OidEmpresa" not-null="true"/>
+    <property column="`CARGO`" type="String" name="Cargo" length="255" />
+    <property column="`NOMBRE`" type="String" name="Nombre" length="255" />
+    <property column="`DNI`" type="String" name="Dni" length="255" />
+    <property column="`DIRECCION`" type="String" name="Direccion" length="255" />
+    <property column="`COD_POSTAL`" type="String" name="CodPostal" length="255" />
+    <property column="`MUNICIPIO`" type="String" name="Municipio" length="255" />
+    <property column="`PROVINCIA`" type="String" name="Provincia" length="255" />
+    <property column="`TELEFONOS`" type="String" name="Telefonos" length="255" />
+
+  </class>
+</hibernate-mapping>

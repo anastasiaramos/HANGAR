@@ -1,0 +1,114 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="moleQule.Library.Application.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FTPHost" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">aerotraining.iqingenieros.com</Value>
+    </Setting>
+    <Setting Name="FTPUser" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">iQanonimo</Value>
+    </Setting>
+    <Setting Name="FTPPwd" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">iqanoni1</Value>
+    </Setting>
+    <Setting Name="FTPFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">HangarUpdate.exe</Value>
+    </Setting>
+    <Setting Name="Update_User" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">iQ</Value>
+    </Setting>
+    <Setting Name="Update_User_Password" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">iQi_1998</Value>
+    </Setting>
+    <Setting Name="Update_User_Domain" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Empresa</Value>
+    </Setting>
+    <Setting Name="Project" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Hangar</Value>
+    </Setting>
+    <Setting Name="USER" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Admin</Value>
+    </Setting>
+    <Setting Name="PWD" Type="System.String" Scope="User">
+      <Value Profile="(Default)">iQi_1998</Value>
+    </Setting>
+    <Setting Name="INSTRUCTION_TOOLBAR" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="INVOICE_TOOLBAR" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="QUALITY_TOOLBAR" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="PLAZO_MAXIMO_AMPLIACION" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="PLAZO_MAXIMO_GENERACION_INFORME" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">14</Value>
+    </Setting>
+    <Setting Name="PLAZO_MAXIMO_NOTIFICACION_DISCREPANCIAS" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">7</Value>
+    </Setting>
+    <Setting Name="PLAZO_MAXIMO_NOTIFICACION_FIN_AUDITORIA" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">7</Value>
+    </Setting>
+    <Setting Name="PLAZO_MAXIMO_DISCREPANCIAS_N1" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">7</Value>
+    </Setting>
+    <Setting Name="PLAZO_MAXIMO_DISCREPANCIAS_N2" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">60</Value>
+    </Setting>
+    <Setting Name="PLAZO_MAXIMO_DISCREPANCIAS_N3" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">90</Value>
+    </Setting>
+    <Setting Name="PLAZO_MAXIMO_RESPUESTA_AMPLIACION" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">14</Value>
+    </Setting>
+    <Setting Name="HIPATIA_FTP_USER" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">iQ</Value>
+    </Setting>
+    <Setting Name="HIPATIA_FTP_PWD" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">WEdfg6543</Value>
+    </Setting>
+    <Setting Name="HIPATIA_FTP_HOST" Type="System.String" Scope="User">
+      <Value Profile="(Default)">servidor.aerotrainingcanarias.com</Value>
+    </Setting>
+    <Setting Name="DB_VERSION" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">4.3.0.0</Value>
+    </Setting>
+    <Setting Name="DB_NAME_PRE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">HANGAR_PRE</Value>
+    </Setting>
+    <Setting Name="APPLICATION_TITLE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Hangar</Value>
+    </Setting>
+    <Setting Name="HIPATIA_FTP_ROOT_PATH" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Hangar</Value>
+    </Setting>
+    <Setting Name="LAN_HOST" Type="System.String" Scope="User">
+      <Value Profile="(Default)">servidor.aerotrainingcanarias.com</Value>
+    </Setting>
+    <Setting Name="WAN_HOST" Type="System.String" Scope="User">
+      <Value Profile="(Default)">servidor.aerotrainingcanarias.com</Value>
+    </Setting>
+    <Setting Name="LAST_USER" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Admin</Value>
+    </Setting>
+    <Setting Name="LAST_SERVER" Type="System.String" Scope="User">
+      <Value Profile="(Default)">localhost</Value>
+    </Setting>
+    <Setting Name="SETTING_NAME_FOMENTO_FOLDER" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">FOMENTO_FOLDER</Value>
+    </Setting>
+    <Setting Name="APPLICATION_ALIAS" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Hangar</Value>
+    </Setting>
+    <Setting Name="DB_NAME" Type="System.String" Scope="User">
+      <Value Profile="(Default)">HANGAR</Value>
+    </Setting>
+    <Setting Name="APPLICATION_VERSION" Type="System.String" Scope="User">
+      <Value Profile="(Default)">7.1.0.0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

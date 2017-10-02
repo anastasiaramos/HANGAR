@@ -1,0 +1,4 @@
+CREATE DATABASE "HANGAR"
+	WITH OWNER = "moladmin"
+	ENCODING = 'UTF8'  
+	TABLESPACE = pg_default;

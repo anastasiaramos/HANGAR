@@ -1,0 +1,77 @@
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\obj\Release\moleQule.Autopilot.ProjectInstaller.resources
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\obj\Release\moleQule.Autopilot.exe
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\obj\Release\moleQule.Autopilot.pdb
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Autopilot.exe.config
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Autopilot.exe
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Autopilot.pdb
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\Csla.dll
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\CslaEx.dll
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.Application.dll
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.Common.dll
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.dll
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.Hipatia.dll
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.Invoice.dll
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.Store.dll
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\NHibernate.dll
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\Npgsql.dll
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\Iesi.Collections.dll
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\Castle.DynamicProxy.dll
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\Mono.Security.dll
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\CslaEx.pdb
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.pdb
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.Application.pdb
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.Common.pdb
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.Hipatia.pdb
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.Invoice.pdb
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.Store.pdb
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\es\CslaEx.resources.dll
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\en\moleQule.Library.resources.dll
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\en\moleQule.Library.Common.resources.dll
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\Ninject.Web.Common.dll
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\Ninject.dll
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\WebActivator.dll
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\Ninject.Web.Common.pdb
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\Ninject.Web.Common.xml
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\Ninject.pdb
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\Ninject.xml
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\bin\BouncyCastle.Crypto.dll
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\obj\Release\moleQule.Autopilot.csprojResolveAssemblyReference.cache
+C:\VS Projects\Hangar\moleQule.Autopilot\moleQule.Autopilot\obj\Release\moleQule.Autopilot.csproj.GenerateResource.Cache
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Autopilot.exe.config
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\obj\Release\moleQule.Autopilot.exe
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\obj\Release\moleQule.Autopilot.pdb
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Autopilot.exe
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Autopilot.pdb
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\Csla.dll
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\Iesi.Collections.dll
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.Application.dll
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.Common.dll
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.dll
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.Hipatia.dll
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.Instruction.dll
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.Invoice.dll
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.Quality.dll
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.Store.dll
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\NHibernate.dll
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\Npgsql.dll
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\Mono.Security.dll
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\Iesi.Collections.xml
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.pdb
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.Application.pdb
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.Common.pdb
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.Hipatia.pdb
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.Instruction.pdb
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.Instruction.xml
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.Invoice.pdb
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.Quality.pdb
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\moleQule.Library.Store.pdb
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\NHibernate.xml
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\Npgsql.pdb
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\Npgsql.xml
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\en\moleQule.Library.resources.dll
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\en\moleQule.Library.Common.resources.dll
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\en\moleQule.Library.Invoice.resources.dll
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\obj\Release\moleQule.Autopilot.csprojResolveAssemblyReference.cache
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\obj\Release\moleQule.Autopilot.ProjectInstaller.resources
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\obj\Release\moleQule.Autopilot.csproj.GenerateResource.Cache
+C:\VS Projects Git\Hangar\code\moleQule.Autopilot\moleQule.Autopilot\bin\en\moleQule.Library.Store.resources.dll
