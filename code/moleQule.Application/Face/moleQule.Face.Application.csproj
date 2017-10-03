@@ -87,7 +87,7 @@
       <HintPath>..\..\..\..\External Libs\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
     <Reference Include="Castle.DynamicProxy">
-      <HintPath>..\..\..\Common\Castle.DynamicProxy.dll</HintPath>
+      <HintPath>..\..\..\..\External Libs\Castle.DynamicProxy.dll</HintPath>
     </Reference>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -111,10 +111,6 @@
     </Reference>
     <Reference Include="Infralution.Localization">
       <HintPath>..\..\..\..\External Libs\Infralution.Localization\bin\Infralution.Localization.dll</HintPath>
-    </Reference>
-    <Reference Include="Interop.VBIDE, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Common\Interop.VBIDE.dll</HintPath>
     </Reference>
     <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>

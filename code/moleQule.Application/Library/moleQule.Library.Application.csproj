@@ -97,17 +97,13 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="moleQule.Library.Invoice">
-      <HintPath>..\..\Release_7.2.0.2\moleQule.Library.Invoice.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\moleQule.Invoice\code\Library\bin\moleQule.Library.Invoice.dll</HintPath>
     </Reference>
     <Reference Include="moleQule.Library.Quality">
-      <HintPath>..\..\Release_7.2.0.2\moleQule.Library.Quality.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\moleQule.Quality\code\Library\bin\moleQule.Library.Quality.dll</HintPath>
     </Reference>
-    <Reference Include="moleQule.Library.Store, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Release_7.2.0.2\moleQule.Library.Store.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="moleQule.Library.Store">
+      <HintPath>..\..\..\..\moleQule.Store\code\Library\bin\moleQule.Library.Store.dll</HintPath>
     </Reference>
     <Reference Include="NHibernate">
       <HintPath>..\..\..\..\moleQule\packages\NHibernate.3.3.3.4001\lib\Net35\NHibernate.dll</HintPath>

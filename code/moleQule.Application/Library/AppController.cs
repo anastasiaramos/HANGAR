@@ -190,7 +190,7 @@ namespace moleQule.Library.Application
 
             Library.Common.ModuleController.Instance.ActivateEntidad(ETipoEntidad.FacturaRecibida, nHManager.Instance.GetSQLTable(typeof(InputInvoiceRecord)), typeof(InputInvoice), typeof(InputInvoices));
             Library.Common.ModuleController.Instance.ActivateEntidad(ETipoEntidad.FacturaEmitida, nHManager.Instance.GetSQLTable(typeof(OutputInvoiceRecord)), typeof(OutputInvoice), typeof(OutputInvoices));
-            Library.Common.ModuleController.Instance.ActivateEntidad(ETipoEntidad.Cobro, nHManager.Instance.GetSQLTable(typeof(ChargeRecord)), typeof(Cobro), typeof(Cobros));
+            //Library.Common.ModuleController.Instance.ActivateEntidad(ETipoEntidad.Cobro, nHManager.Instance.GetSQLTable(typeof(ChargeRecord)), typeof(Cobro), typeof(Cobros));
             Library.Common.ModuleController.Instance.ActivateEntidad(ETipoEntidad.Pago, nHManager.Instance.GetSQLTable(typeof(PaymentRecord)), typeof(Payment), typeof(Payments));
             Library.Common.ModuleController.Instance.ActivateEntidad(ETipoEntidad.Nomina, nHManager.Instance.GetSQLTable(typeof(PayrollRecord)), typeof(Payroll), typeof(Payrolls));
             Library.Common.ModuleController.Instance.ActivateEntidad(ETipoEntidad.Traspaso, nHManager.Instance.GetSQLTable(typeof(BankTransferRecord)), typeof(Traspaso), typeof(Traspasos));
