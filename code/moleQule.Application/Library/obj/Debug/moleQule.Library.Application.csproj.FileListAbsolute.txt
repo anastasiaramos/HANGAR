@@ -30,7 +30,6 @@ C:\Users\Anastasia\Documents\VS Projects Git\Hangar\code\moleQule.Application\Li
 C:\Users\Anastasia\Documents\VS Projects Git\Hangar\code\moleQule.Application\Library\obj\Debug\moleQule.Library.Application.csproj.GenerateResource.Cache
 C:\Users\Anastasia\Documents\VS Projects Git\Hangar\code\moleQule.Application\Library\obj\Debug\moleQule.Library.Application.dll
 C:\Users\Anastasia\Documents\VS Projects Git\Hangar\code\moleQule.Application\Library\obj\Debug\moleQule.Library.Application.pdb
-C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Library\obj\Debug\moleQule.Library.Application.csprojResolveAssemblyReference.cache
 C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Library\obj\Debug\moleQule.Library.Application.Resources.Enums.resources
 C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Library\obj\Debug\moleQule.Library.Application.Resources.Paths.resources
 C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Library\obj\Debug\moleQule.Library.Application.Resources.Defaults.resources
@@ -58,3 +57,4 @@ C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Libra
 C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Library\bin\en\moleQule.Library.Store.resources.dll
 C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Library\obj\Debug\moleQule.Library.Application.dll
 C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Library\obj\Debug\moleQule.Library.Application.pdb
+C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Library\obj\Debug\moleQule.Library.Application.csprojResolveAssemblyReference.cache

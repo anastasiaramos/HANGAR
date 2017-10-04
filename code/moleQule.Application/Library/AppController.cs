@@ -45,6 +45,8 @@ namespace moleQule.Library.Application
         public static string FOTOS_ALUMNOS_PATH { get { return Reg32GetServerPath() + Resources.Paths.RESOURCES_ROOT + Resources.Paths.FOTO_ALUMNOS; } }
         public static string FOTOS_PREGUNTAS_PATH { get { return Reg32GetServerPath() + Resources.Paths.RESOURCES_ROOT + Resources.Paths.FOTO_PREGUNTAS; } }
         public static string FOTOS_PREGUNTAS_EXAMEN_PATH { get { return Reg32GetServerPath() + Resources.Paths.RESOURCES_ROOT + Resources.Paths.FOTO_PREGUNTAS_EXAMENES; } }
+        public static string MODELOS_PREGUNTAS_PATH { get { return Reg32GetServerPath() + Resources.Paths.RESOURCES_ROOT + Resources.Paths.MODELO_PREGUNTAS; } }
+        public static string MODELOS_PREGUNTAS_EXAMEN_PATH { get { return Reg32GetServerPath() + Resources.Paths.RESOURCES_ROOT + Resources.Paths.MODELO_PREGUNTAS_EXAMENES; } }
 
         public static string HELP_PATH { get { return Library.Common.ModuleController.HELP_PATH; } }
         public static string LOGOS_EMPRESAS_PATH { get { return Library.Common.ModuleController.LOGOS_EMPRESAS_PATH; } }
