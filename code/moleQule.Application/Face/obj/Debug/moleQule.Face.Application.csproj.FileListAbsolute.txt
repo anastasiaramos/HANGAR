@@ -174,7 +174,6 @@ C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Face\
 C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Face\bin\moleQule.Library.Common.dll
 C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Face\bin\moleQule.Library.dll
 C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Face\bin\moleQule.Library.Hipatia.dll
-C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Face\bin\moleQule.Library.Instruction.dll
 C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Face\bin\NHibernate.dll
 C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Face\bin\Npgsql.dll
 C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Face\bin\itextsharp.dll
@@ -212,3 +211,4 @@ C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Face\
 C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Face\obj\Debug\moleQule.Face.Application.NewsForm.resources
 C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Face\obj\Debug\moleQule.Face.Application.SettingsForm.resources
 C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Face\obj\Debug\moleQule.Face.Application.csproj.GenerateResource.Cache
+C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Face\bin\moleQule.Library.Instruction.dll
