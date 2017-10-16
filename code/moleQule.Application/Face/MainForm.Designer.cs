@@ -398,10 +398,14 @@ namespace moleQule.Face.Application
             // 
             // Empresas_MI
             // 
+            this.Empresas_MI.Checked = true;
+            this.Empresas_MI.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Empresas_MI.Enabled = false;
             this.Empresas_MI.Image = global::moleQule.Face.Application.Properties.Resources.empresa;
             this.Empresas_MI.Name = "Empresas_MI";
             this.Empresas_MI.Size = new System.Drawing.Size(180, 22);
             this.Empresas_MI.Text = "Empresas";
+            this.Empresas_MI.Visible = false;
             this.Empresas_MI.Click += new System.EventHandler(this.Empresas_MI_Click);
             // 
             // toolStripSeparator1
@@ -411,9 +415,11 @@ namespace moleQule.Face.Application
             // 
             // CambiarEmpresa_MI
             // 
+            this.CambiarEmpresa_MI.Enabled = false;
             this.CambiarEmpresa_MI.Name = "CambiarEmpresa_MI";
             this.CambiarEmpresa_MI.Size = new System.Drawing.Size(180, 22);
             this.CambiarEmpresa_MI.Text = "Cambiar Empresa";
+            this.CambiarEmpresa_MI.Visible = false;
             this.CambiarEmpresa_MI.Click += new System.EventHandler(this.CambiarEmpresa_MI_Click);
             // 
             // CerrarSesion_MI
@@ -711,26 +717,32 @@ namespace moleQule.Face.Application
             // 
             // Material_MI
             // 
+            this.Material_MI.Enabled = false;
             this.Material_MI.Image = global::moleQule.Face.Application.Properties.Resources.MaterialDocente;
             this.Material_MI.Name = "Material_MI";
             this.Material_MI.Size = new System.Drawing.Size(164, 22);
             this.Material_MI.Text = "Material Docente";
+            this.Material_MI.Visible = false;
             this.Material_MI.Click += new System.EventHandler(this.Material_TI_Click);
             // 
             // PlanExtra_MI
             // 
+            this.PlanExtra_MI.Enabled = false;
             this.PlanExtra_MI.Image = global::moleQule.Face.Application.Properties.Resources.PlanExtra;
             this.PlanExtra_MI.Name = "PlanExtra_MI";
             this.PlanExtra_MI.Size = new System.Drawing.Size(233, 22);
             this.PlanExtra_MI.Text = "Planes Extra";
+            this.PlanExtra_MI.Visible = false;
             this.PlanExtra_MI.Click += new System.EventHandler(this.Planes_Extra_TI_Click);
             // 
             // Cursos_MI
             // 
+            this.Cursos_MI.Enabled = false;
             this.Cursos_MI.Image = global::moleQule.Face.Application.Properties.Resources.Cursos;
             this.Cursos_MI.Name = "Cursos_MI";
             this.Cursos_MI.Size = new System.Drawing.Size(233, 22);
             this.Cursos_MI.Text = "Cursos Especiales";
+            this.Cursos_MI.Visible = false;
             this.Cursos_MI.Click += new System.EventHandler(this.Cursos_TI_Click);
             // 
             // toolStripSeparator7
@@ -759,7 +771,7 @@ namespace moleQule.Face.Application
             this.Promociones_MI.Image = global::moleQule.Face.Application.Properties.Resources.Promociones;
             this.Promociones_MI.Name = "Promociones_MI";
             this.Promociones_MI.Size = new System.Drawing.Size(233, 22);
-            this.Promociones_MI.Text = "Promociones";
+            this.Promociones_MI.Text = "Cursos";
             this.Promociones_MI.Click += new System.EventHandler(this.Promociones_TI_Click);
             // 
             // FaltasAsistencia_MI
@@ -1056,7 +1068,7 @@ namespace moleQule.Face.Application
             // 
             this.Festivos_TI.Name = "Festivos_TI";
             this.Festivos_TI.Size = new System.Drawing.Size(170, 22);
-            this.Festivos_TI.Text = "Festivos";
+            this.Festivos_TI.Text = "Días No Lectivos";
             this.Festivos_TI.Click += new System.EventHandler(this.Festivos_TI_Click);
             // 
             // informesToolStripMenuItem
@@ -1217,15 +1229,17 @@ namespace moleQule.Face.Application
             this.Hipatia_MI.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Documentos_MI,
             this.Agentes_MI});
+            this.Hipatia_MI.Enabled = false;
             this.Hipatia_MI.Name = "Hipatia_MI";
             this.Hipatia_MI.Size = new System.Drawing.Size(121, 20);
             this.Hipatia_MI.Text = "Gestor Documental";
+            this.Hipatia_MI.Visible = false;
             // 
             // Documentos_MI
             // 
             this.Documentos_MI.Image = global::moleQule.Face.Application.Properties.Resources.document;
             this.Documentos_MI.Name = "Documentos_MI";
-            this.Documentos_MI.Size = new System.Drawing.Size(152, 22);
+            this.Documentos_MI.Size = new System.Drawing.Size(142, 22);
             this.Documentos_MI.Text = "Documentos";
             this.Documentos_MI.Click += new System.EventHandler(this.Documentos_MI_Click);
             // 
@@ -1233,7 +1247,7 @@ namespace moleQule.Face.Application
             // 
             this.Agentes_MI.Image = global::moleQule.Face.Application.Properties.Resources.index;
             this.Agentes_MI.Name = "Agentes_MI";
-            this.Agentes_MI.Size = new System.Drawing.Size(152, 22);
+            this.Agentes_MI.Size = new System.Drawing.Size(142, 22);
             this.Agentes_MI.Text = "Carpetas";
             this.Agentes_MI.Click += new System.EventHandler(this.Agentes_MI_Click);
             // 
@@ -1313,6 +1327,7 @@ namespace moleQule.Face.Application
             this.Notificaciones_MI.Name = "Notificaciones_MI";
             this.Notificaciones_MI.Size = new System.Drawing.Size(234, 22);
             this.Notificaciones_MI.Text = "Notificaciones";
+            this.Notificaciones_MI.Visible = false;
             this.Notificaciones_MI.Click += new System.EventHandler(this.Notificaciones_MI_Click);
             // 
             // toolStripSeparator13
@@ -1435,6 +1450,7 @@ namespace moleQule.Face.Application
             this.Backup_MI.Name = "Backup_MI";
             this.Backup_MI.Size = new System.Drawing.Size(234, 22);
             this.Backup_MI.Text = "Realizar Copia de Seguridad";
+            this.Backup_MI.Visible = false;
             this.Backup_MI.Click += new System.EventHandler(this.Backup_MI_Click);
             // 
             // Restore_MI
@@ -1505,6 +1521,7 @@ namespace moleQule.Face.Application
             // 
             // PlanesExtra_TI
             // 
+            this.PlanesExtra_TI.Enabled = false;
             this.PlanesExtra_TI.Font = new System.Drawing.Font("Segoe UI", 6.75F);
             this.PlanesExtra_TI.Image = global::moleQule.Face.Application.Properties.Resources.PlanExtra;
             this.PlanesExtra_TI.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -1512,10 +1529,12 @@ namespace moleQule.Face.Application
             this.PlanesExtra_TI.Size = new System.Drawing.Size(57, 48);
             this.PlanesExtra_TI.Text = "Planes Extra";
             this.PlanesExtra_TI.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.PlanesExtra_TI.Visible = false;
             this.PlanesExtra_TI.Click += new System.EventHandler(this.Planes_Extra_TI_Click);
             // 
             // Material_TI
             // 
+            this.Material_TI.Enabled = false;
             this.Material_TI.Font = new System.Drawing.Font("Segoe UI", 6.75F);
             this.Material_TI.Image = global::moleQule.Face.Application.Properties.Resources.material_48;
             this.Material_TI.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -1523,10 +1542,12 @@ namespace moleQule.Face.Application
             this.Material_TI.Size = new System.Drawing.Size(77, 48);
             this.Material_TI.Text = "Material Docente";
             this.Material_TI.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Material_TI.Visible = false;
             this.Material_TI.Click += new System.EventHandler(this.Material_TI_Click);
             // 
             // Cursos_TI
             // 
+            this.Cursos_TI.Enabled = false;
             this.Cursos_TI.Font = new System.Drawing.Font("Segoe UI", 6.75F);
             this.Cursos_TI.Image = global::moleQule.Face.Application.Properties.Resources.curso_48;
             this.Cursos_TI.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -1534,6 +1555,7 @@ namespace moleQule.Face.Application
             this.Cursos_TI.Size = new System.Drawing.Size(79, 48);
             this.Cursos_TI.Text = "Cursos Especiales";
             this.Cursos_TI.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Cursos_TI.Visible = false;
             this.Cursos_TI.Click += new System.EventHandler(this.Cursos_TI_Click);
             // 
             // toolStripSeparator4
@@ -1548,8 +1570,8 @@ namespace moleQule.Face.Application
             this.Instructores_TI.Image = global::moleQule.Face.Application.Properties.Resources.Instructor;
             this.Instructores_TI.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Instructores_TI.Name = "Instructores_TI";
-            this.Instructores_TI.Size = new System.Drawing.Size(107, 48);
-            this.Instructores_TI.Text = "Empleados / Instructores";
+            this.Instructores_TI.Size = new System.Drawing.Size(55, 48);
+            this.Instructores_TI.Text = "Instructores";
             this.Instructores_TI.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Instructores_TI.Click += new System.EventHandler(this.Instructores_TI_Click);
             // 
@@ -1570,8 +1592,8 @@ namespace moleQule.Face.Application
             this.Promociones_TI.Image = global::moleQule.Face.Application.Properties.Resources.Promociones;
             this.Promociones_TI.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Promociones_TI.Name = "Promociones_TI";
-            this.Promociones_TI.Size = new System.Drawing.Size(60, 48);
-            this.Promociones_TI.Text = "Promociones";
+            this.Promociones_TI.Size = new System.Drawing.Size(36, 48);
+            this.Promociones_TI.Text = "Cursos";
             this.Promociones_TI.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Promociones_TI.Click += new System.EventHandler(this.Promociones_TI_Click);
             // 
@@ -1672,6 +1694,7 @@ namespace moleQule.Face.Application
             // 
             // Gestion_Documental_TI
             // 
+            this.Gestion_Documental_TI.Enabled = false;
             this.Gestion_Documental_TI.Font = new System.Drawing.Font("Segoe UI", 6.75F);
             this.Gestion_Documental_TI.Image = global::moleQule.Face.Application.Properties.Resources.documentos_48;
             this.Gestion_Documental_TI.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -1679,6 +1702,7 @@ namespace moleQule.Face.Application
             this.Gestion_Documental_TI.Size = new System.Drawing.Size(59, 48);
             this.Gestion_Documental_TI.Text = "Documentos";
             this.Gestion_Documental_TI.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Gestion_Documental_TI.Visible = false;
             this.Gestion_Documental_TI.Click += new System.EventHandler(this.Hipatia_TI_Click);
             // 
             // Principal_StatusBar
@@ -3142,7 +3166,7 @@ namespace moleQule.Face.Application
             this.Hipatia_TI.Image = global::moleQule.Face.Application.Properties.Resources.document;
             this.Hipatia_TI.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Hipatia_TI.Name = "Hipatia_TI";
-            this.Hipatia_TI.Size = new System.Drawing.Size(71, 51);
+            this.Hipatia_TI.Size = new System.Drawing.Size(71, 48);
             this.Hipatia_TI.Text = "Documentos";
             this.Hipatia_TI.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Hipatia_TI.ButtonClick += new System.EventHandler(this.Documentos_MI_Click);

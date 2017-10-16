@@ -39,9 +39,9 @@ namespace moleQule.Face.Application
         {
             try
             {
-                Principal.SetInstructionBarView(Bars_CLB.GetItemCheckState(0) == CheckState.Checked);
-                Principal.SetInvoiceBarView(Bars_CLB.GetItemCheckState(1) == CheckState.Checked);
-                Principal.SetQualityBarView(Bars_CLB.GetItemCheckState(2) == CheckState.Checked);
+                //Principal.SetInstructionBarView(Bars_CLB.GetItemCheckState(0) == CheckState.Checked);
+                //Principal.SetInvoiceBarView(Bars_CLB.GetItemCheckState(1) == CheckState.Checked);
+                //Principal.SetQualityBarView(Bars_CLB.GetItemCheckState(2) == CheckState.Checked);
                 //Principal.SetShowAutopilot(Bars_CLB.GetItemCheckState(3) == CheckState.Checked);
             }
             catch (Exception ex)
@@ -55,11 +55,11 @@ namespace moleQule.Face.Application
 
         public void ShowBarsVisibility()
         {
-            if (Bars_CLB == null) return;
+            //if (Bars_CLB == null) return;
                 
-            Bars_CLB.SetItemChecked(0, Principal.GetInstructionBarView());
-            Bars_CLB.SetItemChecked(1, Principal.GetInvoiceBarView());
-            Bars_CLB.SetItemChecked(2, Principal.GetQualityBarView());
+            //Bars_CLB.SetItemChecked(0, Principal.GetInstructionBarView());
+            //Bars_CLB.SetItemChecked(1, Principal.GetInvoiceBarView());
+            //Bars_CLB.SetItemChecked(2, Principal.GetQualityBarView());
             //Bars_CLB.SetItemChecked(3, Principal.GetShowAutopilot());
         }
 
@@ -70,142 +70,142 @@ namespace moleQule.Face.Application
             WANHost_TB.Text = Principal.GetWANServer();
 
             // GENERAL SETTINGS
-            try { FiltrarAno_CkB.Checked = Library.Common.ModulePrincipal.GetUseActiveYear(); }
-            catch { }
-            try { AnoActivo_DTP.Value = Library.Common.ModulePrincipal.GetActiveYear(); }
-            catch { }
+            //try { FiltrarAno_CkB.Checked = Library.Common.ModulePrincipal.GetUseActiveYear(); }
+            //catch { }
+            //try { AnoActivo_DTP.Value = Library.Common.ModulePrincipal.GetActiveYear(); }
+            //catch { }
 
             //NOTIFICACIONES
-            try { ShowNofity_CkB.Checked = SettingsMng.Instance.GetShowAutopilot(); }
-            catch { }
+            //try { ShowNofity_CkB.Checked = SettingsMng.Instance.GetShowAutopilot(); }
+            //catch { }
 
-            try { NotifyFacturasE_CkB.Checked = Library.Invoice.ModulePrincipal.GetNotifyFacturasEmitidas(); }
-            catch { }
-            try { NotifyFacturasR_CkB.Checked = Library.Store.ModulePrincipal.GetNotifyFacturasRecibidas(); }
-            catch { }
-            try { NotifyCobros_CkB.Checked = Library.Invoice.ModulePrincipal.GetNotifyCobros(); }
-            catch { }
-            try { NotifyPagos_CkB.Checked = Library.Store.ModulePrincipal.GetNotifyPagos(); }
-            catch { }
-            try { NotifyGastos_CkB.Checked = Library.Store.ModulePrincipal.GetNotifyGastos(); }
-            catch { }
+            //try { NotifyFacturasE_CkB.Checked = Library.Invoice.ModulePrincipal.GetNotifyFacturasEmitidas(); }
+            //catch { }
+            //try { NotifyFacturasR_CkB.Checked = Library.Store.ModulePrincipal.GetNotifyFacturasRecibidas(); }
+            //catch { }
+            //try { NotifyCobros_CkB.Checked = Library.Invoice.ModulePrincipal.GetNotifyCobros(); }
+            //catch { }
+            //try { NotifyPagos_CkB.Checked = Library.Store.ModulePrincipal.GetNotifyPagos(); }
+            //catch { }
+            //try { NotifyGastos_CkB.Checked = Library.Store.ModulePrincipal.GetNotifyGastos(); }
+            //catch { }
 
-            try { NotifyFacturasE_TB.Text = Library.Invoice.ModulePrincipal.GetNotifyPlazoFacturasEmitidas().ToString(); }
-            catch { }
-            try { NotifyFacturasR_TB.Text = Library.Store.ModulePrincipal.GetNotifyPlazoFacturasRecibidas().ToString(); }
-            catch { }
-            try { NotifyCobros_TB.Text = Library.Invoice.ModulePrincipal.GetNotifyPlazoCobros().ToString(); }
-            catch { }
-            try { NotifyPagos_TB.Text = Library.Store.ModulePrincipal.GetNotifyPlazoPagos().ToString(); }
-            catch { }
-            try { NotifyGastos_TB.Text = Library.Store.ModulePrincipal.GetNotifyPlazoGastos().ToString(); }
-            catch { }
+            //try { NotifyFacturasE_TB.Text = Library.Invoice.ModulePrincipal.GetNotifyPlazoFacturasEmitidas().ToString(); }
+            //catch { }
+            //try { NotifyFacturasR_TB.Text = Library.Store.ModulePrincipal.GetNotifyPlazoFacturasRecibidas().ToString(); }
+            //catch { }
+            //try { NotifyCobros_TB.Text = Library.Invoice.ModulePrincipal.GetNotifyPlazoCobros().ToString(); }
+            //catch { }
+            //try { NotifyPagos_TB.Text = Library.Store.ModulePrincipal.GetNotifyPlazoPagos().ToString(); }
+            //catch { }
+            //try { NotifyGastos_TB.Text = Library.Store.ModulePrincipal.GetNotifyPlazoGastos().ToString(); }
+            //catch { }
 
             // FACTURACION / CAJA
-            try
-            {
-                _serie_venta = SerieInfo.Get(Library.Invoice.ModulePrincipal.GetDefaultSerieSetting());
-                SerieVenta_TB.Text = _serie_venta.Nombre;
-            }
-            catch { }
+            //try
+            //{
+            //    _serie_venta = SerieInfo.Get(Library.Invoice.ModulePrincipal.GetDefaultSerieSetting());
+            //    SerieVenta_TB.Text = _serie_venta.Nombre;
+            //}
+            //catch { }
 
-            try
-            {
-                _serie_compra = SerieInfo.Get(Library.Store.ModulePrincipal.GetDefaultSerieSetting());
-                SerieCompra_TB.Text = _serie_compra.Nombre;
-            }
-            catch { }
+            //try
+            //{
+            //    _serie_compra = SerieInfo.Get(Library.Store.ModulePrincipal.GetDefaultSerieSetting());
+            //    SerieCompra_TB.Text = _serie_compra.Nombre;
+            //}
+            //catch { }
 
-            try { LineaCaja_CkB.Checked = Library.Invoice.ModulePrincipal.GetLineaCajaLibreSetting(); }
-            catch { }
+            //try { LineaCaja_CkB.Checked = Library.Invoice.ModulePrincipal.GetLineaCajaLibreSetting(); }
+            //catch { }
 
-            try
-            {
-                _caja_tickets = CashInfo.Get(Library.Invoice.ModulePrincipal.GetCajaTicketsSetting());
-                CajaTickets_TB.Text = _caja_tickets.Nombre;
-            }
-            catch { }
+            //try
+            //{
+            //    _caja_tickets = CashInfo.Get(Library.Invoice.ModulePrincipal.GetCajaTicketsSetting());
+            //    CajaTickets_TB.Text = _caja_tickets.Nombre;
+            //}
+            //catch { }
 
             // CONTABILIDAD
-            CuentaCaja_TB.Text = CashInfo.Get(1, false).CuentaContable;
-            CuentaNominas_TB.Text = Library.Invoice.ModulePrincipal.GetCuentaNominasSetting();
-            CuentaSegSocial_TB.Text = Library.Invoice.ModulePrincipal.GetCuentaSegurosSocialesSetting();
-            CuentaHacienda_TB.Text = Library.Invoice.ModulePrincipal.GetCuentaHaciendaSetting();
-            CuentaRemuneraciones_TB.Text = Library.Invoice.ModulePrincipal.GetCuentaRemuneracionesSetting();
-            CuentaEfectosAPagar_TB.Text = Library.Invoice.ModulePrincipal.GetCuentaEfectosAPagarSetting();
-            CuentaEfectosACobrar_TB.Text = Library.Invoice.ModulePrincipal.GetCuentaEfectosACobrarSetting();
-            AsientoInicial_TB.Text = Library.Invoice.ModulePrincipal.GetLastAsientoSetting();
-            Diario_TB.Text = Library.Invoice.ModulePrincipal.GetJournalSetting();
-            NDigitosCuentasContables_CB.Text = Library.Common.ModulePrincipal.GetNDigitosCuentasContablesSetting().ToString();
-            UseTPVCount_CkB.Checked = Library.Invoice.ModulePrincipal.GetUseTPVCountSetting();
-            ContabilidadFolder_TB.Text = Library.Invoice.ModulePrincipal.GetContabilidadFolder();
+            //CuentaCaja_TB.Text = CashInfo.Get(1, false).CuentaContable;
+            //CuentaNominas_TB.Text = Library.Invoice.ModulePrincipal.GetCuentaNominasSetting();
+            //CuentaSegSocial_TB.Text = Library.Invoice.ModulePrincipal.GetCuentaSegurosSocialesSetting();
+            //CuentaHacienda_TB.Text = Library.Invoice.ModulePrincipal.GetCuentaHaciendaSetting();
+            //CuentaRemuneraciones_TB.Text = Library.Invoice.ModulePrincipal.GetCuentaRemuneracionesSetting();
+            //CuentaEfectosAPagar_TB.Text = Library.Invoice.ModulePrincipal.GetCuentaEfectosAPagarSetting();
+            //CuentaEfectosACobrar_TB.Text = Library.Invoice.ModulePrincipal.GetCuentaEfectosACobrarSetting();
+            //AsientoInicial_TB.Text = Library.Invoice.ModulePrincipal.GetLastAsientoSetting();
+            //Diario_TB.Text = Library.Invoice.ModulePrincipal.GetJournalSetting();
+            //NDigitosCuentasContables_CB.Text = Library.Common.ModulePrincipal.GetNDigitosCuentasContablesSetting().ToString();
+            //UseTPVCount_CkB.Checked = Library.Invoice.ModulePrincipal.GetUseTPVCountSetting();
+            //ContabilidadFolder_TB.Text = Library.Invoice.ModulePrincipal.GetContabilidadFolder();
 
-            CuentaCaja_TB.Text = CashInfo.Get(1, false).CuentaContable;
+            //CuentaCaja_TB.Text = CashInfo.Get(1, false).CuentaContable;
 
             // NOMINAS
-            try
-            {
-                _nominas = TipoGastoInfo.Get(Library.Store.ModulePrincipal.GetDefaultNominasSetting());
-                Nominas_TB.Text = _nominas.Nombre;
-            }
-            catch { }
+            //try
+            //{
+            //    _nominas = TipoGastoInfo.Get(Library.Store.ModulePrincipal.GetDefaultNominasSetting());
+            //    Nominas_TB.Text = _nominas.Nombre;
+            //}
+            //catch { }
 
-            try
-            {
-                _seguros = TipoGastoInfo.Get(Library.Store.ModulePrincipal.GetDefaultSegurosSetting());
-                Seguros_TB.Text = _seguros.Nombre;
-            }
-            catch { }
+            //try
+            //{
+            //    _seguros = TipoGastoInfo.Get(Library.Store.ModulePrincipal.GetDefaultSegurosSetting());
+            //    Seguros_TB.Text = _seguros.Nombre;
+            //}
+            //catch { }
 
-            try
-            {
-                _irpf = TipoGastoInfo.Get(Library.Store.ModulePrincipal.GetDefaultIRPFSetting());
-                IRPF_TB.Text = _irpf.Nombre;
-            }
-            catch { }
+            //try
+            //{
+            //    _irpf = TipoGastoInfo.Get(Library.Store.ModulePrincipal.GetDefaultIRPFSetting());
+            //    IRPF_TB.Text = _irpf.Nombre;
+            //}
+            //catch { }
 
-            //// BALANCE
-            BalancePrintFacturasExplotacion_CkB.Checked = Library.Invoice.ModulePrincipal.GetBalancePrintFacturasExplotacion();
-            BalancePrintFacturasAcreedores_CkB.Checked = Library.Invoice.ModulePrincipal.GetBalancePrintFacturasAcreeedores();
-            BalancePrintOtrosGastos_CkB.Checked = Library.Invoice.ModulePrincipal.GetBalancePrintOtrosGastos();
-            BalancePrintGastosNominas_CkB.Checked = Library.Invoice.ModulePrincipal.GetBalancePrintGastosNominas();
-            BalancePrintEfectosPtesVto_CkB.Checked = Library.Invoice.ModulePrincipal.GetBalancePrintEfectosPendientesVto();
-            BalancePrintPagosEstimados_CkB.Checked = Library.Invoice.ModulePrincipal.GetBalancePrintPagosEstimados();
+            ////// BALANCE
+            //BalancePrintFacturasExplotacion_CkB.Checked = Library.Invoice.ModulePrincipal.GetBalancePrintFacturasExplotacion();
+            //BalancePrintFacturasAcreedores_CkB.Checked = Library.Invoice.ModulePrincipal.GetBalancePrintFacturasAcreeedores();
+            //BalancePrintOtrosGastos_CkB.Checked = Library.Invoice.ModulePrincipal.GetBalancePrintOtrosGastos();
+            //BalancePrintGastosNominas_CkB.Checked = Library.Invoice.ModulePrincipal.GetBalancePrintGastosNominas();
+            //BalancePrintEfectosPtesVto_CkB.Checked = Library.Invoice.ModulePrincipal.GetBalancePrintEfectosPendientesVto();
+            //BalancePrintPagosEstimados_CkB.Checked = Library.Invoice.ModulePrincipal.GetBalancePrintPagosEstimados();
 
-            BalancePrintFacturasEmitidas_CkB.Checked = Library.Invoice.ModulePrincipal.GetBalancePrintFacturasEmitidas();
-            BalancePrintExistencias_CkB.Checked = Library.Invoice.ModulePrincipal.GetBalancePrintExistencias();
-            BalancePrintEfectosNegociados_CkB.Checked = Library.Invoice.ModulePrincipal.GetBalancePrintEfectosNegociados();
-            BalancePrintEfectosPendientes_CkB.Checked = Library.Invoice.ModulePrincipal.GetBalancePrintEfectosPendientes();
-            BalancePrintAyudasPendientes_CkB.Checked = Library.Invoice.ModulePrincipal.GetBalancePrintAyudasPendientes();
-            BalancePrintAyudasCobradas_CkB.Checked = Library.Invoice.ModulePrincipal.GetBalancePrintAyudasCobradas();
-            BalancePrintBancos_CkB.Checked = Library.Invoice.ModulePrincipal.GetBalancePrintBancos();
+            //BalancePrintFacturasEmitidas_CkB.Checked = Library.Invoice.ModulePrincipal.GetBalancePrintFacturasEmitidas();
+            //BalancePrintExistencias_CkB.Checked = Library.Invoice.ModulePrincipal.GetBalancePrintExistencias();
+            //BalancePrintEfectosNegociados_CkB.Checked = Library.Invoice.ModulePrincipal.GetBalancePrintEfectosNegociados();
+            //BalancePrintEfectosPendientes_CkB.Checked = Library.Invoice.ModulePrincipal.GetBalancePrintEfectosPendientes();
+            //BalancePrintAyudasPendientes_CkB.Checked = Library.Invoice.ModulePrincipal.GetBalancePrintAyudasPendientes();
+            //BalancePrintAyudasCobradas_CkB.Checked = Library.Invoice.ModulePrincipal.GetBalancePrintAyudasCobradas();
+            //BalancePrintBancos_CkB.Checked = Library.Invoice.ModulePrincipal.GetBalancePrintBancos();
 
             //Settings de Auditoría 
 
-            try { NotifyAuditorias_CkB.Checked = Library.Quality.ModulePrincipal.GetNotifyAuditorias(); }
-            catch { }
+            //try { NotifyAuditorias_CkB.Checked = Library.Quality.ModulePrincipal.GetNotifyAuditorias(); }
+            //catch { }
 
-            try { NotifyAuditorias_TB.Text = Library.Quality.ModulePrincipal.GetNotifyPlazoAuditorias().ToString(); }
-            catch { }
+            //try { NotifyAuditorias_TB.Text = Library.Quality.ModulePrincipal.GetNotifyPlazoAuditorias().ToString(); }
+            //catch { }
 
-            try { PM_DiscrepanciasN1_TB.Text = Library.Quality.ModulePrincipal.GetPlazoMaximoDiscrepanciasN1Setting().ToString(); }
-            catch { }
-            try { PM_DiscrepanciasN2_TB.Text = Library.Quality.ModulePrincipal.GetPlazoMaximoDiscrepanciasN2Setting().ToString(); }
-            catch { }
-            try { PM_DiscrepanciasN3_TB.Text = Library.Quality.ModulePrincipal.GetPlazoMaximoDiscrepanciasN3Setting().ToString(); }
-            catch { }
-            try { PM_GeneracionInforme_TB.Text = Library.Quality.ModulePrincipal.GetPlazoMaximoGeneracionInformeSetting().ToString(); }
-            catch { }
-            try { PM_NotificacionDiscrepancias_TB.Text = Library.Quality.ModulePrincipal.GetPlazoMaximoNotificacionDiscrepanciasSetting().ToString(); }
-            catch { }
-            try { PM_NotificacionFinAuditoria_TB.Text = Library.Quality.ModulePrincipal.GetPlazoMaximoNotificacionFinAuditoriaSetting().ToString(); }
-            catch { }
-            try { PM_RespuestaAmpliacion_TB.Text = Library.Quality.ModulePrincipal.GetPlazoMaximoRespuestaAmpliacionSetting().ToString(); }
-            catch { }
-            try { PorcentajeMaximoAmpliacion_TB.Text = Library.Quality.ModulePrincipal.GetPlazoMaximoAmpliacionSetting().ToString(); }
-            catch { }
-            try { AvisoDiscrepanciasAbiertas_TB.Text = Library.Quality.ModulePrincipal.GetAvisoDiscrepanciasAbiertasSetting().ToString(); }
-            catch { }
+            //try { PM_DiscrepanciasN1_TB.Text = Library.Quality.ModulePrincipal.GetPlazoMaximoDiscrepanciasN1Setting().ToString(); }
+            //catch { }
+            //try { PM_DiscrepanciasN2_TB.Text = Library.Quality.ModulePrincipal.GetPlazoMaximoDiscrepanciasN2Setting().ToString(); }
+            //catch { }
+            //try { PM_DiscrepanciasN3_TB.Text = Library.Quality.ModulePrincipal.GetPlazoMaximoDiscrepanciasN3Setting().ToString(); }
+            //catch { }
+            //try { PM_GeneracionInforme_TB.Text = Library.Quality.ModulePrincipal.GetPlazoMaximoGeneracionInformeSetting().ToString(); }
+            //catch { }
+            //try { PM_NotificacionDiscrepancias_TB.Text = Library.Quality.ModulePrincipal.GetPlazoMaximoNotificacionDiscrepanciasSetting().ToString(); }
+            //catch { }
+            //try { PM_NotificacionFinAuditoria_TB.Text = Library.Quality.ModulePrincipal.GetPlazoMaximoNotificacionFinAuditoriaSetting().ToString(); }
+            //catch { }
+            //try { PM_RespuestaAmpliacion_TB.Text = Library.Quality.ModulePrincipal.GetPlazoMaximoRespuestaAmpliacionSetting().ToString(); }
+            //catch { }
+            //try { PorcentajeMaximoAmpliacion_TB.Text = Library.Quality.ModulePrincipal.GetPlazoMaximoAmpliacionSetting().ToString(); }
+            //catch { }
+            //try { AvisoDiscrepanciasAbiertas_TB.Text = Library.Quality.ModulePrincipal.GetAvisoDiscrepanciasAbiertasSetting().ToString(); }
+            //catch { }
 
             //Exámenes
 
@@ -294,51 +294,51 @@ namespace moleQule.Face.Application
             Principal.SetWANServer(WANHost_TB.Text);
 
             // GENERAL
-            Library.Common.ModulePrincipal.SetActiveYear(AnoActivo_DTP.Value);
-            Library.Common.ModulePrincipal.SetUseActiveYear(FiltrarAno_CkB.Checked);
+            //Library.Common.ModulePrincipal.SetActiveYear(AnoActivo_DTP.Value);
+            //Library.Common.ModulePrincipal.SetUseActiveYear(FiltrarAno_CkB.Checked);
 
             //NOTIFICACIONES
-            SettingsMng.Instance.SetShowAutopilot(ShowNofity_CkB.Checked);
+            //SettingsMng.Instance.SetShowAutopilot(ShowNofity_CkB.Checked);
 
-            Library.Store.ModulePrincipal.SetNotifyFacturasRecibidas(NotifyFacturasR_CkB.Checked);
-            Library.Invoice.ModulePrincipal.SetNotifyFacturasEmitidas(NotifyFacturasE_CkB.Checked);
-            Library.Invoice.ModulePrincipal.SetNotifyCobros(NotifyCobros_CkB.Checked);
-            Library.Store.ModulePrincipal.SetNotifyPagos(NotifyPagos_CkB.Checked);
-            Library.Store.ModulePrincipal.SetNotifyGastos(NotifyGastos_CkB.Checked);
+            //Library.Store.ModulePrincipal.SetNotifyFacturasRecibidas(NotifyFacturasR_CkB.Checked);
+            //Library.Invoice.ModulePrincipal.SetNotifyFacturasEmitidas(NotifyFacturasE_CkB.Checked);
+            //Library.Invoice.ModulePrincipal.SetNotifyCobros(NotifyCobros_CkB.Checked);
+            //Library.Store.ModulePrincipal.SetNotifyPagos(NotifyPagos_CkB.Checked);
+            //Library.Store.ModulePrincipal.SetNotifyGastos(NotifyGastos_CkB.Checked);
 
-            try { Library.Store.ModulePrincipal.SetNotifyPlazoFacturasRecibidas(Convert.ToInt32(NotifyFacturasR_TB.Text)); }
-            catch { }
-            try { Library.Invoice.ModulePrincipal.SetNotifyPlazoFacturasEmitidas(Convert.ToInt32(NotifyFacturasE_TB.Text)); }
-            catch { }
-            try { Library.Invoice.ModulePrincipal.SetNotifyPlazoCobros(Convert.ToInt32(NotifyCobros_TB.Text)); }
-            catch { }
-            try { Library.Store.ModulePrincipal.SetNotifyPlazoPagos(Convert.ToInt32(NotifyPagos_TB.Text)); }
-            catch { }
-            try { Library.Store.ModulePrincipal.SetNotifyPlazoGastos(Convert.ToInt32(NotifyGastos_TB.Text)); }
-            catch { }
+            //try { Library.Store.ModulePrincipal.SetNotifyPlazoFacturasRecibidas(Convert.ToInt32(NotifyFacturasR_TB.Text)); }
+            //catch { }
+            //try { Library.Invoice.ModulePrincipal.SetNotifyPlazoFacturasEmitidas(Convert.ToInt32(NotifyFacturasE_TB.Text)); }
+            //catch { }
+            //try { Library.Invoice.ModulePrincipal.SetNotifyPlazoCobros(Convert.ToInt32(NotifyCobros_TB.Text)); }
+            //catch { }
+            //try { Library.Store.ModulePrincipal.SetNotifyPlazoPagos(Convert.ToInt32(NotifyPagos_TB.Text)); }
+            //catch { }
+            //try { Library.Store.ModulePrincipal.SetNotifyPlazoGastos(Convert.ToInt32(NotifyGastos_TB.Text)); }
+            //catch { }
 
             // FACTURACION / CAJA
             Library.Invoice.ModulePrincipal.SetDefaultSerieSetting((_serie_venta != null) ? _serie_venta.Oid : 0);
             Library.Store.ModulePrincipal.SetDefaultSerieSetting((_serie_compra != null) ? _serie_compra.Oid : 0);
-            Library.Invoice.ModulePrincipal.SetLineaCajaLibreSetting(LineaCaja_CkB.Checked);
+            //Library.Invoice.ModulePrincipal.SetLineaCajaLibreSetting(LineaCaja_CkB.Checked);
             Library.Invoice.ModulePrincipal.SetCajaTicketsSetting((_caja_tickets != null) ? _caja_tickets.Oid : 0);
 
             // CONTABILIDAD
-            Library.Common.ModulePrincipal.SetNDigitosCuentasContablesSetting(Convert.ToInt64(NDigitosCuentasContables_CB.Text));
-            Library.Invoice.ModulePrincipal.SetCuentaNominasSetting(CuentaNominas_TB.Text);
-            Library.Invoice.ModulePrincipal.SetCuentaSegurosSocialesSetting(CuentaSegSocial_TB.Text);
-            Library.Invoice.ModulePrincipal.SetCuentaHaciendaSetting(CuentaHacienda_TB.Text);
-            Library.Invoice.ModulePrincipal.SetCuentaRemuneracionesSetting(CuentaRemuneraciones_TB.Text);
-            Library.Invoice.ModulePrincipal.SetCuentaEfectosACobrarSetting(CuentaEfectosACobrar_TB.Text);
-            Library.Invoice.ModulePrincipal.SetCuentaEfectosAPagarSetting(CuentaEfectosAPagar_TB.Text);
-            try { Library.Invoice.ModulePrincipal.SetLastAsientoSetting(Convert.ToInt64(AsientoInicial_TB.Text)); }
-            catch { }
-            try { Library.Invoice.ModulePrincipal.SetJournalSetting(Convert.ToInt64(Diario_TB.Text)); }
-            catch { }
-            Library.Invoice.ModulePrincipal.SetUseTPVCountSetting(UseTPVCount_CkB.Checked);
-            Library.Invoice.ModulePrincipal.SetContabilidadFolder(ContabilidadFolder_TB.Text);
+            //Library.Common.ModulePrincipal.SetNDigitosCuentasContablesSetting(Convert.ToInt64(NDigitosCuentasContables_CB.Text));
+            //Library.Invoice.ModulePrincipal.SetCuentaNominasSetting(CuentaNominas_TB.Text);
+            //Library.Invoice.ModulePrincipal.SetCuentaSegurosSocialesSetting(CuentaSegSocial_TB.Text);
+            //Library.Invoice.ModulePrincipal.SetCuentaHaciendaSetting(CuentaHacienda_TB.Text);
+            //Library.Invoice.ModulePrincipal.SetCuentaRemuneracionesSetting(CuentaRemuneraciones_TB.Text);
+            //Library.Invoice.ModulePrincipal.SetCuentaEfectosACobrarSetting(CuentaEfectosACobrar_TB.Text);
+            //Library.Invoice.ModulePrincipal.SetCuentaEfectosAPagarSetting(CuentaEfectosAPagar_TB.Text);
+            //try { Library.Invoice.ModulePrincipal.SetLastAsientoSetting(Convert.ToInt64(AsientoInicial_TB.Text)); }
+            //catch { }
+            //try { Library.Invoice.ModulePrincipal.SetJournalSetting(Convert.ToInt64(Diario_TB.Text)); }
+            //catch { }
+            //Library.Invoice.ModulePrincipal.SetUseTPVCountSetting(UseTPVCount_CkB.Checked);
+            //Library.Invoice.ModulePrincipal.SetContabilidadFolder(ContabilidadFolder_TB.Text);
 
-            SetCuentaCaja();
+            //SetCuentaCaja();
 
             // NOMINAS
             Library.Store.ModulePrincipal.SetDefaultNominasSetting((_nominas != null) ? _nominas.Oid : 0);
@@ -346,54 +346,54 @@ namespace moleQule.Face.Application
             Library.Store.ModulePrincipal.SetDefaultIRPFSetting((_irpf != null) ? _irpf.Oid : 0);
 
             // BALANCE
-            Library.Invoice.ModulePrincipal.SetBalancePrintFacturasExplotacion(BalancePrintFacturasExplotacion_CkB.Checked);
-            Library.Invoice.ModulePrincipal.SetBalancePrintFacturasAcreeedores(BalancePrintFacturasAcreedores_CkB.Checked);
-            Library.Invoice.ModulePrincipal.SetBalancePrintOtrosGastos(BalancePrintOtrosGastos_CkB.Checked);
-            Library.Invoice.ModulePrincipal.SetBalancePrintGastosNominas(BalancePrintGastosNominas_CkB.Checked);
-            Library.Invoice.ModulePrincipal.SetBalancePrintEfectosPendientesVto(BalancePrintEfectosPtesVto_CkB.Checked);
-            Library.Invoice.ModulePrincipal.SetBalancePrintPagosEstimados(BalancePrintPagosEstimados_CkB.Checked);
+            //Library.Invoice.ModulePrincipal.SetBalancePrintFacturasExplotacion(BalancePrintFacturasExplotacion_CkB.Checked);
+            //Library.Invoice.ModulePrincipal.SetBalancePrintFacturasAcreeedores(BalancePrintFacturasAcreedores_CkB.Checked);
+            //Library.Invoice.ModulePrincipal.SetBalancePrintOtrosGastos(BalancePrintOtrosGastos_CkB.Checked);
+            //Library.Invoice.ModulePrincipal.SetBalancePrintGastosNominas(BalancePrintGastosNominas_CkB.Checked);
+            //Library.Invoice.ModulePrincipal.SetBalancePrintEfectosPendientesVto(BalancePrintEfectosPtesVto_CkB.Checked);
+            //Library.Invoice.ModulePrincipal.SetBalancePrintPagosEstimados(BalancePrintPagosEstimados_CkB.Checked);
 
-            Library.Invoice.ModulePrincipal.SetBalancePrintFacturasEmitidas(BalancePrintFacturasEmitidas_CkB.Checked);
-            Library.Invoice.ModulePrincipal.SetBalancePrintExistencias(BalancePrintExistencias_CkB.Checked);
-            Library.Invoice.ModulePrincipal.SetBalancePrintEfectosNegociados(BalancePrintEfectosNegociados_CkB.Checked);
-            Library.Invoice.ModulePrincipal.SetBalancePrintEfectosPendientes(BalancePrintEfectosPendientes_CkB.Checked);
-            Library.Invoice.ModulePrincipal.SetBalancePrintAyudasPendientes(BalancePrintAyudasPendientes_CkB.Checked);
-            Library.Invoice.ModulePrincipal.SetBalancePrintAyudasCobradas(BalancePrintAyudasCobradas_CkB.Checked);
-            Library.Invoice.ModulePrincipal.SetBalancePrintBancos(BalancePrintBancos_CkB.Checked);
+            //Library.Invoice.ModulePrincipal.SetBalancePrintFacturasEmitidas(BalancePrintFacturasEmitidas_CkB.Checked);
+            //Library.Invoice.ModulePrincipal.SetBalancePrintExistencias(BalancePrintExistencias_CkB.Checked);
+            //Library.Invoice.ModulePrincipal.SetBalancePrintEfectosNegociados(BalancePrintEfectosNegociados_CkB.Checked);
+            //Library.Invoice.ModulePrincipal.SetBalancePrintEfectosPendientes(BalancePrintEfectosPendientes_CkB.Checked);
+            //Library.Invoice.ModulePrincipal.SetBalancePrintAyudasPendientes(BalancePrintAyudasPendientes_CkB.Checked);
+            //Library.Invoice.ModulePrincipal.SetBalancePrintAyudasCobradas(BalancePrintAyudasCobradas_CkB.Checked);
+            //Library.Invoice.ModulePrincipal.SetBalancePrintBancos(BalancePrintBancos_CkB.Checked);
             
             //Settings de Auditoría
 
-            Library.Quality.ModulePrincipal.SetNotifyAuditorias(NotifyAuditorias_CkB.Checked);
+            //Library.Quality.ModulePrincipal.SetNotifyAuditorias(NotifyAuditorias_CkB.Checked);
 
-            try { Library.Quality.ModulePrincipal.SetNotifyPlazoAuditorias(Convert.ToInt32(NotifyAuditorias_TB.Text)); }
-            catch { }
+            //try { Library.Quality.ModulePrincipal.SetNotifyPlazoAuditorias(Convert.ToInt32(NotifyAuditorias_TB.Text)); }
+            //catch { }
 
-            try { Library.Quality.ModulePrincipal.SetAvisoDiscrepanciasAbiertasSetting(Convert.ToInt64(AvisoDiscrepanciasAbiertas_TB.Text)); }
-            catch { }
+            //try { Library.Quality.ModulePrincipal.SetAvisoDiscrepanciasAbiertasSetting(Convert.ToInt64(AvisoDiscrepanciasAbiertas_TB.Text)); }
+            //catch { }
 
-            try { Library.Quality.ModulePrincipal.SetPazoMaximoRespuestaAmpliacionSetting(Convert.ToInt64(PM_RespuestaAmpliacion_TB.Text)); }
-            catch { }
+            //try { Library.Quality.ModulePrincipal.SetPazoMaximoRespuestaAmpliacionSetting(Convert.ToInt64(PM_RespuestaAmpliacion_TB.Text)); }
+            //catch { }
 
-            try { Library.Quality.ModulePrincipal.SetPlazoMaximoAmpliacionSetting(Convert.ToInt64(PorcentajeMaximoAmpliacion_TB.Text)); }
-            catch { }
+            //try { Library.Quality.ModulePrincipal.SetPlazoMaximoAmpliacionSetting(Convert.ToInt64(PorcentajeMaximoAmpliacion_TB.Text)); }
+            //catch { }
 
-            try { Library.Quality.ModulePrincipal.SetPlazoMaximoDiscrepanciasN1Setting(Convert.ToInt64(PM_DiscrepanciasN1_TB.Text)); }
-            catch { }
+            //try { Library.Quality.ModulePrincipal.SetPlazoMaximoDiscrepanciasN1Setting(Convert.ToInt64(PM_DiscrepanciasN1_TB.Text)); }
+            //catch { }
 
-            try { Library.Quality.ModulePrincipal.SetPlazoMaximoDiscrepanciasN2Setting(Convert.ToInt64(PM_DiscrepanciasN2_TB.Text)); }
-            catch { }
+            //try { Library.Quality.ModulePrincipal.SetPlazoMaximoDiscrepanciasN2Setting(Convert.ToInt64(PM_DiscrepanciasN2_TB.Text)); }
+            //catch { }
 
-            try { Library.Quality.ModulePrincipal.SetPlazoMaximoDiscrepanciasN3Setting(Convert.ToInt64(PM_DiscrepanciasN3_TB.Text)); }
-            catch { }            
+            //try { Library.Quality.ModulePrincipal.SetPlazoMaximoDiscrepanciasN3Setting(Convert.ToInt64(PM_DiscrepanciasN3_TB.Text)); }
+            //catch { }            
 
-            try { Library.Quality.ModulePrincipal.SetPlazoMaximoGeneracionInformeSetting(Convert.ToInt64(PM_GeneracionInforme_TB.Text)); }
-            catch { }
+            //try { Library.Quality.ModulePrincipal.SetPlazoMaximoGeneracionInformeSetting(Convert.ToInt64(PM_GeneracionInforme_TB.Text)); }
+            //catch { }
 
-            try { Library.Quality.ModulePrincipal.SetPlazoMaximoNotificacionDiscrepanciasSetting(Convert.ToInt64(PM_NotificacionDiscrepancias_TB.Text)); }
-            catch { }
+            //try { Library.Quality.ModulePrincipal.SetPlazoMaximoNotificacionDiscrepanciasSetting(Convert.ToInt64(PM_NotificacionDiscrepancias_TB.Text)); }
+            //catch { }
 
-            try { Library.Quality.ModulePrincipal.SetPlazoMaximoNotificacionFinAuditoriaSetting(Convert.ToInt64(PM_NotificacionFinAuditoria_TB.Text)); }
-            catch { }
+            //try { Library.Quality.ModulePrincipal.SetPlazoMaximoNotificacionFinAuditoriaSetting(Convert.ToInt64(PM_NotificacionFinAuditoria_TB.Text)); }
+            //catch { }
 
             //Exámenes
 
@@ -458,13 +458,13 @@ namespace moleQule.Face.Application
             base.SaveSettings();
         }
 
-        protected void SetCuentaCaja()
-        {
-            Cash caja = Cash.Get(1, false);
-            caja.CuentaContable = CuentaCaja_TB.Text;
-            caja.Save();
-            caja.CloseSession();
-        }
+        //protected void SetCuentaCaja()
+        //{
+        //    Cash caja = Cash.Get(1, false);
+        //    caja.CuentaContable = CuentaCaja_TB.Text;
+        //    caja.Save();
+        //    caja.CloseSession();
+        //}
                 
         #endregion
 
@@ -477,21 +477,21 @@ namespace moleQule.Face.Application
             RefreshMainData();
         }
 
-        public void SetCuentasMask()
-        {
-            string mask = Library.Invoice.ModuleController.GetCuentasMask();
-            SetCuentasMask(mask);
-        }
-        public void SetCuentasMask(string mask)
-        {
-            CuentaCaja_TB.Mask = mask;
-            CuentaNominas_TB.Mask = mask;
-            CuentaSegSocial_TB.Mask = mask;
-            CuentaHacienda_TB.Mask = mask;
-            CuentaRemuneraciones_TB.Mask = mask;
-            CuentaEfectosAPagar_TB.Mask = mask;
-            CuentaEfectosACobrar_TB.Mask = mask;
-        }
+        //public void SetCuentasMask()
+        //{
+        //    string mask = Library.Invoice.ModuleController.GetCuentasMask();
+        //    SetCuentasMask(mask);
+        //}
+        //public void SetCuentasMask(string mask)
+        //{
+        //    CuentaCaja_TB.Mask = mask;
+        //    CuentaNominas_TB.Mask = mask;
+        //    CuentaSegSocial_TB.Mask = mask;
+        //    CuentaHacienda_TB.Mask = mask;
+        //    CuentaRemuneraciones_TB.Mask = mask;
+        //    CuentaEfectosAPagar_TB.Mask = mask;
+        //    CuentaEfectosACobrar_TB.Mask = mask;
+        //}
 
         #endregion
 
@@ -596,84 +596,84 @@ namespace moleQule.Face.Application
 
         #region Buttons
         
-        private void SerieVenta_BT_Click(object sender, EventArgs e)
-        {
-            SerieList list = SerieList.GetList(false, ETipoSerie.Venta);
-            SerieSelectForm form = new SerieSelectForm(this);
+        //private void SerieVenta_BT_Click(object sender, EventArgs e)
+        //{
+        //    SerieList list = SerieList.GetList(false, ETipoSerie.Venta);
+        //    SerieSelectForm form = new SerieSelectForm(this);
 
-            if (form.ShowDialog(this) == DialogResult.OK)
-            {
-                _serie_venta = form.Selected as SerieInfo;
-                SerieVenta_TB.Text = _serie_venta.Nombre;
-            }
-        }
+        //    if (form.ShowDialog(this) == DialogResult.OK)
+        //    {
+        //        _serie_venta = form.Selected as SerieInfo;
+        //        SerieVenta_TB.Text = _serie_venta.Nombre;
+        //    }
+        //}
 
-        private void SerieCompra_BT_Click(object sender, EventArgs e)
-        {
-            SerieList list = SerieList.GetList(false, ETipoSerie.Compra);
-            SerieSelectForm form = new SerieSelectForm(this, list);
+        //private void SerieCompra_BT_Click(object sender, EventArgs e)
+        //{
+        //    SerieList list = SerieList.GetList(false, ETipoSerie.Compra);
+        //    SerieSelectForm form = new SerieSelectForm(this, list);
 
-            if (form.ShowDialog(this) == DialogResult.OK)
-            {
-                _serie_compra = form.Selected as SerieInfo;
-                SerieCompra_TB.Text = _serie_compra.Nombre;
-            }
-        }
+        //    if (form.ShowDialog(this) == DialogResult.OK)
+        //    {
+        //        _serie_compra = form.Selected as SerieInfo;
+        //        SerieCompra_TB.Text = _serie_compra.Nombre;
+        //    }
+        //}
 
-        private void CajaTickets_BT_Click(object sender, EventArgs e)
-        {
-            CashList list = CashList.GetList(false);
-            CashSelectForm form = new CashSelectForm(this, list);
+        //private void CajaTickets_BT_Click(object sender, EventArgs e)
+        //{
+        //    CashList list = CashList.GetList(false);
+        //    CashSelectForm form = new CashSelectForm(this, list);
 
-            if (form.ShowDialog(this) == DialogResult.OK)
-            {
-                _caja_tickets = form.Selected as CashInfo;
-                CajaTickets_TB.Text = _caja_tickets.Nombre;
-            }
-        }
+        //    if (form.ShowDialog(this) == DialogResult.OK)
+        //    {
+        //        _caja_tickets = form.Selected as CashInfo;
+        //        CajaTickets_TB.Text = _caja_tickets.Nombre;
+        //    }
+        //}
 
-        private void Examinar_BT_Click(object sender, EventArgs e)
-        {
-            Browser.ShowDialog();
-            ContabilidadFolder_TB.Text = Browser.SelectedPath;
-        }
+        //private void Examinar_BT_Click(object sender, EventArgs e)
+        //{
+        //    Browser.ShowDialog();
+        //    ContabilidadFolder_TB.Text = Browser.SelectedPath;
+        //}
 
 
-        private void Seguros_BT_Click(object sender, EventArgs e)
-        {
-            TipoGastoList list = TipoGastoList.GetList(false);
-            TipoGastoSelectForm form = new TipoGastoSelectForm(this, list);
+        //private void Seguros_BT_Click(object sender, EventArgs e)
+        //{
+        //    TipoGastoList list = TipoGastoList.GetList(false);
+        //    TipoGastoSelectForm form = new TipoGastoSelectForm(this, list);
 
-            if (form.ShowDialog(this) == DialogResult.OK)
-            {
-                _seguros = form.Selected as TipoGastoInfo;
-                Seguros_TB.Text = _seguros.Nombre;
-            }
-        }
+        //    if (form.ShowDialog(this) == DialogResult.OK)
+        //    {
+        //        _seguros = form.Selected as TipoGastoInfo;
+        //        Seguros_TB.Text = _seguros.Nombre;
+        //    }
+        //}
 
-        private void IRPF_BT_Click(object sender, EventArgs e)
-        {
-            TipoGastoList list = TipoGastoList.GetList(false);
-            TipoGastoSelectForm form = new TipoGastoSelectForm(this, list);
+        //private void IRPF_BT_Click(object sender, EventArgs e)
+        //{
+        //    TipoGastoList list = TipoGastoList.GetList(false);
+        //    TipoGastoSelectForm form = new TipoGastoSelectForm(this, list);
 
-            if (form.ShowDialog(this) == DialogResult.OK)
-            {
-                _irpf = form.Selected as TipoGastoInfo;
-                IRPF_TB.Text = _irpf.Nombre;
-            }
-        }
+        //    if (form.ShowDialog(this) == DialogResult.OK)
+        //    {
+        //        _irpf = form.Selected as TipoGastoInfo;
+        //        IRPF_TB.Text = _irpf.Nombre;
+        //    }
+        //}
 
-        private void Nominas_BT_Click(object sender, EventArgs e)
-        {
-            TipoGastoList list = TipoGastoList.GetList(false);
-            TipoGastoSelectForm form = new TipoGastoSelectForm(this, list);
+        //private void Nominas_BT_Click(object sender, EventArgs e)
+        //{
+        //    TipoGastoList list = TipoGastoList.GetList(false);
+        //    TipoGastoSelectForm form = new TipoGastoSelectForm(this, list);
 
-            if (form.ShowDialog(this) == DialogResult.OK)
-            {
-                _nominas = form.Selected as TipoGastoInfo;
-                Nominas_TB.Text = _nominas.Nombre;
-            }
-        }
+        //    if (form.ShowDialog(this) == DialogResult.OK)
+        //    {
+        //        _nominas = form.Selected as TipoGastoInfo;
+        //        Nominas_TB.Text = _nominas.Nombre;
+        //    }
+        //}
 
         #endregion
 
@@ -681,7 +681,7 @@ namespace moleQule.Face.Application
 
         private void FiltrarAno_CkB_CheckedChanged(object sender, EventArgs e)
         {
-            AnoActivo_DTP.Enabled = FiltrarAno_CkB.Checked;
+            //AnoActivo_DTP.Enabled = FiltrarAno_CkB.Checked;
         }
 
         #endregion
