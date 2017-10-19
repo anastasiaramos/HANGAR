@@ -217,7 +217,10 @@ namespace moleQule.Face.Application
             catch { }
             try { Pm_NotaExamen_CB.Checked = Convert.ToBoolean(Library.Instruction.ModulePrincipal.GetCriterioPorcentajeMinimoExamenAprobadoSetting()); }
             catch { }
-
+            try { PreguntasDesarrollo_MTB.Text = Library.Instruction.ModulePrincipal.GetTiempoPreguntasTipoDesarrolloSetting().TimeOfDay.ToString(); }
+            catch { }
+            try { PreguntasTest_MTB.Text = Library.Instruction.ModulePrincipal.GetTiempoPreguntasTipoTestSetting().TimeOfDay.ToString(); }
+            catch { }
 
             moleQule.Library.HComboBoxSourceList lista_horas_ini = new moleQule.Library.HComboBoxSourceList();
 
@@ -404,6 +407,10 @@ namespace moleQule.Face.Application
             try { Library.Instruction.ModulePrincipal.SetCriterioPorcentajeMaximoFaltasModuloSetting(PM_FaltasModulo_CB.Checked); }
             catch { }
             try { Library.Instruction.ModulePrincipal.SetCriterioPorcentajeMinimoExamenAprobadoSetting(Pm_NotaExamen_CB.Checked); }
+            catch { }
+            try { Library.Instruction.ModulePrincipal.SetTiempoPreguntasTipoDesarrolloSetting(Convert.ToDateTime(PreguntasDesarrollo_MTB.Text)); }
+            catch { }
+            try { Library.Instruction.ModulePrincipal.SetTiempoPreguntasTipoTestSetting(Convert.ToDateTime(PreguntasTest_MTB.Text)); }
             catch { }
 
             //Cuadros de disponibilidad

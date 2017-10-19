@@ -69,6 +69,11 @@ namespace moleQule.Face.Application
             this.label27 = new System.Windows.Forms.Label();
             this.PM_FaltasModulo_TB = new System.Windows.Forms.TextBox();
             this.Pm_ExamenAprobado_TB = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.PreguntasDesarrollo_MTB = new System.Windows.Forms.MaskedTextBox();
+            this.PreguntasTest_MTB = new System.Windows.Forms.MaskedTextBox();
             label39 = new System.Windows.Forms.Label();
             this.Settings_TP.SuspendLayout();
             this.Idioma_GB.SuspendLayout();
@@ -101,6 +106,7 @@ namespace moleQule.Face.Application
             ((System.ComponentModel.ISupportInitialize)(this.Datos_HorasT1I)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Datos_HorasT1F)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // Settings_TP
@@ -175,7 +181,7 @@ namespace moleQule.Face.Application
             this.Hosts_TP.Controls.Add(this.groupBox5);
             this.Hosts_TP.Location = new System.Drawing.Point(4, 24);
             this.HelpProvider.SetShowHelp(this.Hosts_TP, true);
-            this.Hosts_TP.Size = new System.Drawing.Size(569, 609);
+            this.Hosts_TP.Size = new System.Drawing.Size(571, 477);
             this.Hosts_TP.Controls.SetChildIndex(this.DBHosts_GB, 0);
             this.Hosts_TP.Controls.SetChildIndex(this.SMTP_GB, 0);
             this.Hosts_TP.Controls.SetChildIndex(this.FilesHost_GB, 0);
@@ -186,7 +192,7 @@ namespace moleQule.Face.Application
             // 
             this.Backups_TP.Location = new System.Drawing.Point(4, 24);
             this.HelpProvider.SetShowHelp(this.Backups_TP, true);
-            this.Backups_TP.Size = new System.Drawing.Size(569, 609);
+            this.Backups_TP.Size = new System.Drawing.Size(571, 477);
             // 
             // FormatGrids_CkB
             // 
@@ -404,6 +410,7 @@ namespace moleQule.Face.Application
             // 
             // Instruccion_TP
             // 
+            this.Instruccion_TP.Controls.Add(this.groupBox2);
             this.Instruccion_TP.Controls.Add(this.ImpresionEmpresaDefault_BT);
             this.Instruccion_TP.Controls.Add(this.ImpresionEmpresaDefault_TB);
             this.Instruccion_TP.Controls.Add(this.ImpresionEmpresaDefault_CB);
@@ -421,7 +428,7 @@ namespace moleQule.Face.Application
             // ImpresionEmpresaDefault_BT
             // 
             this.ImpresionEmpresaDefault_BT.Image = global::moleQule.Face.Application.Properties.Resources.Seleccionar_16;
-            this.ImpresionEmpresaDefault_BT.Location = new System.Drawing.Point(418, 509);
+            this.ImpresionEmpresaDefault_BT.Location = new System.Drawing.Point(418, 570);
             this.ImpresionEmpresaDefault_BT.Name = "ImpresionEmpresaDefault_BT";
             this.ImpresionEmpresaDefault_BT.Size = new System.Drawing.Size(48, 23);
             this.ImpresionEmpresaDefault_BT.TabIndex = 31;
@@ -430,7 +437,7 @@ namespace moleQule.Face.Application
             // 
             // ImpresionEmpresaDefault_TB
             // 
-            this.ImpresionEmpresaDefault_TB.Location = new System.Drawing.Point(80, 509);
+            this.ImpresionEmpresaDefault_TB.Location = new System.Drawing.Point(80, 570);
             this.ImpresionEmpresaDefault_TB.Name = "ImpresionEmpresaDefault_TB";
             this.ImpresionEmpresaDefault_TB.ReadOnly = true;
             this.ImpresionEmpresaDefault_TB.Size = new System.Drawing.Size(332, 21);
@@ -438,7 +445,7 @@ namespace moleQule.Face.Application
             // 
             // ImpresionEmpresaDefault_CB
             // 
-            this.ImpresionEmpresaDefault_CB.Location = new System.Drawing.Point(167, 484);
+            this.ImpresionEmpresaDefault_CB.Location = new System.Drawing.Point(167, 545);
             this.ImpresionEmpresaDefault_CB.Name = "ImpresionEmpresaDefault_CB";
             this.ImpresionEmpresaDefault_CB.Size = new System.Drawing.Size(232, 17);
             this.ImpresionEmpresaDefault_CB.TabIndex = 29;
@@ -448,7 +455,7 @@ namespace moleQule.Face.Application
             // InstructoresAutorizados_CB
             // 
             this.InstructoresAutorizados_CB.Enabled = false;
-            this.InstructoresAutorizados_CB.Location = new System.Drawing.Point(167, 461);
+            this.InstructoresAutorizados_CB.Location = new System.Drawing.Point(167, 522);
             this.InstructoresAutorizados_CB.Name = "InstructoresAutorizados_CB";
             this.InstructoresAutorizados_CB.Size = new System.Drawing.Size(232, 17);
             this.InstructoresAutorizados_CB.TabIndex = 28;
@@ -476,7 +483,7 @@ namespace moleQule.Face.Application
             this.groupBox4.Controls.Add(this.FinTarde1_CB);
             this.groupBox4.Controls.Add(this.comboBox3);
             this.groupBox4.ForeColor = System.Drawing.Color.Black;
-            this.groupBox4.Location = new System.Drawing.Point(103, 254);
+            this.groupBox4.Location = new System.Drawing.Point(103, 315);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(365, 165);
             this.groupBox4.TabIndex = 27;
@@ -679,7 +686,7 @@ namespace moleQule.Face.Application
             this.groupBox1.Controls.Add(this.PM_FaltasModulo_TB);
             this.groupBox1.Controls.Add(this.Pm_ExamenAprobado_TB);
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(101, 85);
+            this.groupBox1.Location = new System.Drawing.Point(101, 29);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(365, 131);
             this.groupBox1.TabIndex = 24;
@@ -745,6 +752,54 @@ namespace moleQule.Face.Application
             this.Pm_ExamenAprobado_TB.Size = new System.Drawing.Size(51, 21);
             this.Pm_ExamenAprobado_TB.TabIndex = 21;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.PreguntasTest_MTB);
+            this.groupBox2.Controls.Add(this.PreguntasDesarrollo_MTB);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.ForeColor = System.Drawing.Color.Black;
+            this.groupBox2.Location = new System.Drawing.Point(101, 174);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(365, 131);
+            this.groupBox2.TabIndex = 27;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Establecer tiempo de Preguntas de Examen";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(21, 54);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(145, 13);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Preguntas de Tipo Desarrollo";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(21, 87);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(118, 13);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "Preguntas de Tipo Test";
+            // 
+            // PreguntasDesarrollo_MTB
+            // 
+            this.PreguntasDesarrollo_MTB.Location = new System.Drawing.Point(226, 46);
+            this.PreguntasDesarrollo_MTB.Mask = "00:00:00";
+            this.PreguntasDesarrollo_MTB.Name = "PreguntasDesarrollo_MTB";
+            this.PreguntasDesarrollo_MTB.Size = new System.Drawing.Size(62, 21);
+            this.PreguntasDesarrollo_MTB.TabIndex = 24;
+            // 
+            // PreguntasTest_MTB
+            // 
+            this.PreguntasTest_MTB.Location = new System.Drawing.Point(226, 79);
+            this.PreguntasTest_MTB.Mask = "00:00:00";
+            this.PreguntasTest_MTB.Name = "PreguntasTest_MTB";
+            this.PreguntasTest_MTB.Size = new System.Drawing.Size(62, 21);
+            this.PreguntasTest_MTB.TabIndex = 25;
+            // 
             // SettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -798,6 +853,8 @@ namespace moleQule.Face.Application
             ((System.ComponentModel.ISupportInitialize)(this.Datos_HorasT1F)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -843,5 +900,10 @@ namespace moleQule.Face.Application
         private System.Windows.Forms.Button ImpresionEmpresaDefault_BT;
         private System.Windows.Forms.TextBox ImpresionEmpresaDefault_TB;
         private System.Windows.Forms.CheckBox ImpresionEmpresaDefault_CB;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.MaskedTextBox PreguntasTest_MTB;
+        private System.Windows.Forms.MaskedTextBox PreguntasDesarrollo_MTB;
     }
 }
