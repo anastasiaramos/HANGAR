@@ -152,8 +152,6 @@ C:\Users\Anastasia\Documents\VS Projects Git\Hangar\code\moleQule.Application\Fa
 C:\Users\Anastasia\Documents\VS Projects Git\Hangar\code\moleQule.Application\Face\obj\Release\moleQule.Face.Application.SettingsForm.resources
 C:\Users\Anastasia\Documents\VS Projects Git\Hangar\code\moleQule.Application\Face\obj\Release\moleQule.Face.Application.csproj.GenerateResource.Cache
 C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Face\bin\Hangar.exe.config
-C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Face\obj\Release\Hangar.exe
-C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Face\obj\Release\Hangar.pdb
 C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Face\bin\Hangar.exe
 C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Face\bin\Hangar.pdb
 C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Face\bin\BouncyCastle.Crypto.dll
@@ -212,3 +210,5 @@ C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Face\
 C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Face\obj\Release\moleQule.Face.Application.NewsForm.resources
 C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Face\obj\Release\moleQule.Face.Application.SettingsForm.resources
 C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Face\obj\Release\moleQule.Face.Application.csproj.GenerateResource.Cache
+C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Face\obj\Release\Hangar.exe
+C:\Users\Anastasia\Documents\Git Projects\Hangar\code\moleQule.Application\Face\obj\Release\Hangar.pdb
